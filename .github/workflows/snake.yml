@@ -2,27 +2,25 @@ name: Generate Snake Animation
  
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *" # Atualiza a cada 6 horas
   workflow_dispatch:
  
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout the repository
         uses: actions/checkout@v4
  
-      - name: Generate Snake
-        uses: Platane/snk/svg-only@v3
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
           github_user_name: beto-rocha-blockchain
-          outputs: |
-            ./assets/github-contribution-grid-snake.svg
- 
-      - name: Commit snake
-        run: |
-git config --global user.name 'github-actions'
-git config --global user.email 'github-actions@github.com'
-          git add assets/github-contribution-grid-snake.svg
-          git commit -m "Generated snake animation" || echo "No changes to commit"
-          git push
+          outputs: ./assets/github-contribution-grid-snake.svg
+      - name: Push the generated snake
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: "Generate contribution grid snake"
+          add: "assets/github-contribution-grid-snake.svg"
