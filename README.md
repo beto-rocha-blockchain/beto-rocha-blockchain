@@ -72,7 +72,7 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
 
 ---
 
-<h3 align="center">Technologies and Skills</h3>
+<h3 align="center">Tecnologias e Habilidades</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
