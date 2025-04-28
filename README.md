@@ -57,6 +57,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 - Building APIs with Flask and FastAPI in Python
 - Crafting Web3 interfaces with React and modern frameworks
 - Hardhat and Foundry Mastery
+- Implementation of **Zero-Knowledge Proofs (ZKPs)** for enhanced privacy and scalability in blockchain applications
 
 ---
 
@@ -90,7 +91,8 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
   <img src="https://img.shields.io/badge/JavaScript-Especialista-800080?style=for-the-badge&logo=javascript&logoColor=white" />
   <img src="https://img.shields.io/badge/React-Avançado-800080?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Hardhat-Especialista-000000?style=for-the-badge&logo=ethereum&logoColor=white" />
-  <img src="https://img.shields.io/badge/Web3.js-Avançado-800080?style=for-the-badge&logo=web3dotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Web3.js-Especialista-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-Intermediário-0000FF?style=for-the-badge&logo=rust&logoColor=white" />
 </p>
 
 ---
@@ -103,6 +105,7 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
 - Construção de APIs em Python com Flask e FastAPI
 - Interfaces Web3 com React.js e frameworks modernos
 - Domínio de Hardhat e Foundry
+- Implementação de **Provas de Conhecimento Zero (ZKPs)** para maior privacidade e escalabilidade em aplicações blockchain
 
 ---
 
