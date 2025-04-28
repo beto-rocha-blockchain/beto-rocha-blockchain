@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.png" alt="Banner Roberto Pimentel" />
+  <img src="./assets/banner.png" alt="Banner Roberto Pimentel" style="animation: pulse 2s infinite; max-width: 100%;" />
 </p>
 
 <h1 align="center">👨‍💻 Roberto Pimentel</h1>
@@ -10,6 +10,14 @@
       Blockchain Specialist | Solidity • JS • Python
     </text>
   </svg>
+</p>
+
+---
+
+## 🐍 Snake Animation
+
+<p align="center">
+  <img src="https://github.com/beto-rocha-blockchain/beto-rocha-blockchain/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
 </p>
 
 ---
@@ -26,14 +34,14 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 - Building APIs with Flask and FastAPI in Python
 - Crafting Web3 interfaces with React and modern frameworks
 - Hardhat and Foundry Mastery
-  
+
 ---
 
 ## 🌐 Let's connect
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/robertoblockchainresources)
 - 📧 Email: roberto.blockchainresources@gmail.com
-- 🌐 [Access my portfolio here!]( https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/)
+- 🌐 [Access my portfolio here!](https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/)
 
 <p align="center">
   <svg width="300" height="30">
@@ -42,14 +50,15 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
     </text>
   </svg>
 </p>
-<h1 align="center">👨‍💻 Roberto Pimentel</h1>
+
+---
+
+<h3 align="center">Tecnologias e Habilidades</h3>
 
 <p align="center">
-  <svg width="450" height="60">
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="22" fill="#00b894">
-      Especialista em Blockchain | Solidity • JS • Python
-    </text>
-  </svg>
+  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
+  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
+  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
 </p>
 
 ---
@@ -73,7 +82,7 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/robertoblockchainresources)
 - 📧 Email: roberto.blockchainresources@gmail.com
-- 🌐 [Acesse meu portfólio aqui!]( https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/)
+- 🌐 [Acesse meu portfólio aqui!](https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/)
 
 <p align="center">
   <svg width="300" height="30">
@@ -82,5 +91,3 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
     </text>
   </svg>
 </p>
-
----
