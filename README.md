@@ -12,13 +12,6 @@
   </svg>
 </p>
 
-<h3 align="center">Technologies and Skills</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
-  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
-  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
-</p>
 
 ## 🐍 Contribution Snake
 
@@ -33,6 +26,18 @@
 ## 🇺🇸 About me
 
 I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**, focusing on **smart contracts**, **Web3 interfaces**, and decentralized applications. I’m proficient in **Solidity**, **JavaScript**, and **Python**, building secure and scalable blockchain solutions from the backend to the frontend.
+
+---
+
+<h3 align="center">Technologies and Skills</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
+  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
+  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
+</p>
+
+---
 
 ### 💼 My skillset includes:
 
@@ -64,6 +69,18 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 ## 🇧🇷 Sobre mim
 
 Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain**, com foco em **contratos inteligentes** (Solidity), **interfaces Web3** e soluções descentralizadas. Domino **Solidity**, **JavaScript** e **Python**, com experiências em desenvolvimento de aplicações completas — do back-end seguro ao front-end interativo.
+
+---
+
+<h3 align="center">Technologies and Skills</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
+  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
+  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
+</p>
+
+---
 
 ### 💼 Minhas habilidades incluem:
 
