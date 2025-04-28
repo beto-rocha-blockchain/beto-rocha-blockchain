@@ -63,16 +63,6 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 
 ---
 
-## 🐍 Contribution Snake
-
----
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/beto-rocha-blockchain/beto-rocha-blockchain/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</div>
-
----
-
 ## 🇧🇷 Sobre mim
 
 Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain**, com foco em **contratos inteligentes** (Solidity), **interfaces Web3** e soluções descentralizadas. Domino **Solidity**, **JavaScript** e **Python**, com experiências em desenvolvimento de aplicações completas — do back-end seguro ao front-end interativo.
