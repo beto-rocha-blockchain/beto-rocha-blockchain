@@ -9,19 +9,20 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the repository
+      - name: Checkout
         uses: actions/checkout@v4
  
-      - name: Generate the snake animation
-        uses: Platane/snk@v3
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: beto-rocha-blockchain
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+            ./assets/github-contribution-grid-snake.svg
  
-      - name: Push the changes
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: output
-          folder: dist
+      - name: Commit snake
+        run: |
+git config --global user.name 'github-actions'
+git config --global user.email 'github-actions@github.com'
+          git add assets/github-contribution-grid-snake.svg
+          git commit -m "Generated snake animation" || echo "No changes to commit"
+          git push
