@@ -12,6 +12,14 @@
   </svg>
 </p>
 
+<h3 align="center">Tecnologias e Habilidades</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
+  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
+  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
+</p>
+
 ## 🐍 Contribution Snake
 
 ---
@@ -49,16 +57,6 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
       Let's build the decentralized future together!
     </text>
   </svg>
-</p>
-
----
-
-<h3 align="center">Tecnologias e Habilidades</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
-  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
-  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
 </p>
 
 ---
