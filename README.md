@@ -16,9 +16,7 @@
 
 ## 🐍 Contribution Snake
  
-<p align="center">
-  <img src="./assets/github-contribution-grid-snake.svg" alt="snake animation" />
-</p>
+![Snake animation](https://github.com/beto-rocha-blockchain/beto-rocha-blockchain/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
@@ -65,9 +63,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 
 ## 🐍 Contribution Snake
  
-<p align="center">
-  <img src="./assets/github-contribution-grid-snake.svg" alt="snake animation" />
-</p>
+![Snake animation](https://github.com/beto-rocha-blockchain/beto-rocha-blockchain/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
