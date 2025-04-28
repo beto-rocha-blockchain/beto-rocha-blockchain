@@ -3,7 +3,7 @@ name: Generate Snake Animation
 on:
   schedule:
     - cron: "0 0 * * *"  # Executa todo dia à meia-noite UTC
-  workflow_dispatch:
+  workflow_dispatch:     # Permite rodar manualmente
  
 jobs:
   generate:
@@ -25,5 +25,7 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
+          allow_empty_commit: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

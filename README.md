@@ -12,19 +12,41 @@
   </svg>
 </p>
 
+
 ## 🐍 Contribution Snake
 
 ---
 
 <div align="center">
-<img src="https://github.com/beto-rocha-blockchain/beto-rocha-blockchain/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/beto-rocha-blockchain/beto-rocha-blockchain/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
+
+---
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=beto-rocha-blockchain&style=flat-square&color=blue" alt="Profile Views" />
+</p>
 
 ---
 
 ## 🇺🇸 About me
 
 I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**, focusing on **smart contracts**, **Web3 interfaces**, and decentralized applications. I’m proficient in **Solidity**, **JavaScript**, and **Python**, building secure and scalable blockchain solutions from the backend to the frontend.
+
+---
+
+## 🚀🥋 Technologies and proficiency levels
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-Expert-000000?style=for-the-badge&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Intermediate-0000FF?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-Advanced-800080?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-Intermediate-0000FF?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Hardhat-Advanced-800080?style=for-the-badge&logo=ethereum&logoColor=white" />
+  <img src="https://img.shields.io/badge/Web3.js-Advanced-800080?style=for-the-badge&logo=web3dotjs&logoColor=white" />
+</p>
+
+---
 
 ### 💼 My skillset includes:
 
@@ -53,29 +75,24 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 
 ---
 
-<h3 align="center">Tecnologias e Habilidades</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Solidity-Expert-brightgreen?style=for-the-badge&logo=ethereum" alt="Solidity Badge" />
-  <img src="https://img.shields.io/badge/JavaScript-Advanced-yellow?style=for-the-badge&logo=javascript" alt="JavaScript Badge" />
-  <img src="https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python" alt="Python Badge" />
-</p>
-
----
-
-## 🐍 Contribution Snake
-
----
-
-<div align="center">
-<img src="https://github.com/beto-rocha-blockchain/beto-rocha-blockchain/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</div>
-
----
-
 ## 🇧🇷 Sobre mim
 
 Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain**, com foco em **contratos inteligentes** (Solidity), **interfaces Web3** e soluções descentralizadas. Domino **Solidity**, **JavaScript** e **Python**, com experiências em desenvolvimento de aplicações completas — do back-end seguro ao front-end interativo.
+
+---
+
+## 🚀🥋 Tecnologias e níveis de proficiência
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-Especialista-000000?style=for-the-badge&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Intermediário-0000FF?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-Especialista-800080?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-Intermediário-0000FF?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Hardhat-Especialista-800080?style=for-the-badge&logo=ethereum&logoColor=white" />
+  <img src="https://img.shields.io/badge/Web3.js-Especialista-800080?style=for-the-badge&logo=web3dotjs&logoColor=white" />
+</p>
+
+---
 
 ### 💼 Minhas habilidades incluem:
 
