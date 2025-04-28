@@ -33,7 +33,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/robertoblockchainresources)
 - 📧 Email: roberto.blockchainresources@gmail.com
-- 🌐 [Access my portfolio here!](https://seu-usuario.github.io/beto-rocha-blockchain/site-example/index.html)
+- 🌐 [Access my portfolio here!]( https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/)
 
 <p align="center">
   <svg width="300" height="30">
@@ -73,7 +73,7 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/robertoblockchainresources)
 - 📧 Email: roberto.blockchainresources@gmail.com
-- 🌐 [Acesse meu portfólio aqui!](https://seu-usuario.github.io/beto-rocha-blockchain/site-example/index.html)
+- 🌐 [Acesse meu portfólio aqui!]( https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/)
 
 <p align="center">
   <svg width="300" height="30">
