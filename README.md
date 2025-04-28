@@ -23,6 +23,12 @@
 
 ---
 
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=beto-rocha-blockchain&style=flat-square&color=blue" alt="Profile Views" />
+</p>
+
+---
+
 ## 🇺🇸 About me
 
 I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**, focusing on **smart contracts**, **Web3 interfaces**, and decentralized applications. I’m proficient in **Solidity**, **JavaScript**, and **Python**, building secure and scalable blockchain solutions from the backend to the frontend.
