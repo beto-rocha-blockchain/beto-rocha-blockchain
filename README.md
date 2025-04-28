@@ -84,12 +84,12 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
 ## 🚀🥋 Tecnologias e níveis de proficiência
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Solidity-Expert-000000?style=for-the-badge&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-Intermediate-0000FF?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-Advanced-800080?style=for-the-badge&logo=javascript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-Intermediate-0000FF?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Hardhat-Advanced-800080?style=for-the-badge&logo=ethereum&logoColor=white" />
-  <img src="https://img.shields.io/badge/Web3.js-Advanced-800080?style=for-the-badge&logo=web3dotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-Especialista-000000?style=for-the-badge&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Intermediário-0000FF?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-Especialista-800080?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-Intermediário-0000FF?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Hardhat-Especialista-800080?style=for-the-badge&logo=ethereum&logoColor=white" />
+  <img src="https://img.shields.io/badge/Web3.js-Especialista-800080?style=for-the-badge&logo=web3dotjs&logoColor=white" />
 </p>
 
 ---
