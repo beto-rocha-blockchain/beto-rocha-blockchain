@@ -88,7 +88,7 @@ Sou **Roberto Pimentel**, desenvolvedor **fullstack especializado em Blockchain*
 <p align="center">
   <img src="https://img.shields.io/badge/Solidity-Especialista-000000?style=for-the-badge&logo=solidity&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-Avançado-800080?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-Especialista-800080?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-Especialista-000000?style=for-the-badge&logo=javascript&logoColor=white" />
   <img src="https://img.shields.io/badge/React-Avançado-800080?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Hardhat-Especialista-000000?style=for-the-badge&logo=ethereum&logoColor=white" />
   <img src="https://img.shields.io/badge/Web3.js-Especialista-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
