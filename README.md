@@ -46,6 +46,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
   <img src="https://img.shields.io/badge/Web3.js-Expert-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Foundry-Expert-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Rust-Intermediate-0000FF?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/ZkVerify-Expert-000000?style=for-the-badge&logo=rust&logoColor=white" />
 </p>
 
 ---
@@ -95,6 +96,7 @@ Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockcha
   <img src="https://img.shields.io/badge/Web3.js-Especialista-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Foundry-Especialista-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Rust-Intermediário-0000FF?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/ZkVerify-Especialista-000000?style=for-the-badge&logo=rust&logoColor=white" />
 </p>
 
 ---
