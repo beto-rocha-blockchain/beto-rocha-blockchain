@@ -81,7 +81,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 
 ## 🇧🇷 Sobre mim
 
-Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockchain**, com foco em **contratos inteligentes**, **interfaces Web3** e aplicações descentralizadas. Sou proficiente em **Solidity**, **Python**, **JavaScript**, **React**, **Hardhat**, **Web3.js**, **Foundry ** e **Rust**, construindo soluções de blockchain seguras e escaláveis ​​do backend ao frontend.
+Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockchain**, com foco em **contratos inteligentes**, **interfaces Web3** e aplicações descentralizadas. Sou proficiente em **Solidity**, **Python**, **JavaScript**, **React**, **Hardhat**, **Web3.js**, **Foundry** e **Rust**, construindo soluções de blockchain seguras e escaláveis ​​do backend ao frontend.
 
 ---
 
