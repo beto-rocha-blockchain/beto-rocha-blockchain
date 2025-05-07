@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/halo.jpg" alt="Banner Roberto Pimentel" style="animation: pulse 2s infinite; max-width: 100%;" />
+  <img src="./assets/halo.jpg" alt="halo" style="animation: pulse 2s infinite; max-width: 100%;" />
 </p>
 
 <p align="center">
