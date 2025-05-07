@@ -3,10 +3,6 @@
 </p>
 
 <p align="center">
-  <img src="./assets/halo.jpg" alt="halo" style="animation: pulse 2s infinite; max-width: 100%;" />
-</p>
-
-<p align="center">
   <svg width="450" height="60">
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="22" fill="#0984e3">
       Blockchain Specialist | Solidity • JS • Python
