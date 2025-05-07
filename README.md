@@ -2,7 +2,9 @@
   <img src="./assets/banner.png" alt="Banner Roberto Pimentel" style="animation: pulse 2s infinite; max-width: 100%;" />
 </p>
 
-<h1 align="center">👨‍💻 Roberto Pimentel</h1>
+<p align="center">
+  <img src="./assets/halo.jpg" alt="halo" style="animation: pulse 2s infinite; max-width: 100%;" />
+</p>
 
 <p align="center">
   <svg width="450" height="60">
