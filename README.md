@@ -91,15 +91,20 @@ Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockcha
 ## 🚀🥋 Tecnologias e níveis de proficiência
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Solidity-Especialista-000000?style=for-the-badge&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-Avançado-800080?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-Especialista-000000?style=for-the-badge&logo=javascript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-Avançado-800080?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Hardhat-Especialista-000000?style=for-the-badge&logo=ethereum&logoColor=white" />
-  <img src="https://img.shields.io/badge/Web3.js-Especialista-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Foundry-Especialista-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-Intermediário-0000FF?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/ZkVerify-Especialista-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-Especialista-000000?style=for-the-badge&labelColor=363636&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Advanced-800080?style=for-the-badge&labelColor=3776AB&logo=python&logoColor=FFD845" />
+  <img src="https://img.shields.io/badge/JavaScript-Especialista-000000?style=for-the-badge&labelColor=F7DF1E&logo=javascript&logoColor=000000" />
+  <img src="https://img.shields.io/badge/React-Avançado-800080?style=for-the-badge&labelColor=61DAFB&logo=react&logoColor=000000" />
+  <img src="https://img.shields.io/badge/Hardhat-Especialista-000000?style=for-the-badge&labelColor=F3C915&logo=ethereum&logoColor=000000" />
+  <img src="https://img.shields.io/badge/Web3.js-Especialista-000000?style=for-the-badge&labelColor=F16822&logo=web3dotjs&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/Foundry-Especialista-000000?style=for-the-badge&labelColor=333333&logo=foundry&logoColor=ffffff" />
+  <img src="https://img.shields.io/badge/Rust-Especialista-000000?style=for-the-badge&labelColor=000000&logo=rust&logoColor=DEA584" />
+  <img src="https://img.shields.io/badge/ZkVerify-Especialista-000000?style=for-the-badge&labelColor=000000&logo=rust&logoColor=DEA584" />
+  <img src="https://img.shields.io/badge/HTML5-Especialista-000000?style=for-the-badge&labelColor=E34F26&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-Especialista-000000?style=for-the-badge&labelColor=1572B6&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-Especialista-000000?style=for-the-badge&labelColor=F05032&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-Especialista-000000?style=for-the-badge&labelColor=181717&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-Especialista-000000?style=for-the-badge&labelColor=339933&logo=node.js&logoColor=white" />
 </p>
 
 ---
