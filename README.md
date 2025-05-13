@@ -36,15 +36,15 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 ## 🚀🥋 Technologies and proficiency levels
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Solidity-Expert-000000?style=for-the-badge&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-Advanced-800080?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-Expert-000000?style=for-the-badge&logo=javascript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-Advanced-800080?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Hardhat-Expert-000000?style=for-the-badge&logo=ethereum&logoColor=white" />
-  <img src="https://img.shields.io/badge/Web3.js-Expert-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Foundry-Expert-000000?style=for-the-badge&logo=web3dotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-Intermediate-0000FF?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/ZkVerify-Expert-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-Expert-000000?style=for-the-badge&logo=solidity&logoColor=#363636" />
+  <img src="https://img.shields.io/badge/Python-Advanced-800080?style=for-the-badge&logo=python&logoColor=#3776AB" />
+  <img src="https://img.shields.io/badge/JavaScript-Expert-000000?style=for-the-badge&logo=javascript&logoColor=#F7DF1E" />
+  <img src="https://img.shields.io/badge/React-Advanced-800080?style=for-the-badge&logo=react&logoColor=#61DAFB" />
+  <img src="https://img.shields.io/badge/Hardhat-Expert-000000?style=for-the-badge&logo=ethereum&logoColor=#3C3C3D" />
+  <img src="https://img.shields.io/badge/Web3.js-Expert-000000?style=for-the-badge&logo=web3dotjs&logoColor=#F16822" />
+  <img src="https://img.shields.io/badge/Foundry-Expert-000000?style=for-the-badge&logo=foundry&logoColor=#000000" />
+  <img src="https://img.shields.io/badge/Rust-Intermediate-0000FF?style=for-the-badge&logo=rust&logoColor=#DEA584" />
+  <img src="https://img.shields.io/badge/ZkVerify-Expert-000000?style=for-the-badge&logo=rust&logoColor=#DEA584" />
 </p>
 
 ---
