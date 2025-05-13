@@ -45,6 +45,11 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
   <img src="https://img.shields.io/badge/Foundry-Expert-000000?style=for-the-badge&labelColor=333333&logo=foundry&logoColor=ffffff" />
   <img src="https://img.shields.io/badge/Rust-Intermediate-0000FF?style=for-the-badge&labelColor=000000&logo=rust&logoColor=DEA584" />
   <img src="https://img.shields.io/badge/ZkVerify-Expert-000000?style=for-the-badge&labelColor=000000&logo=rust&logoColor=DEA584" />
+  <img src="https://img.shields.io/badge/HTML5-Expert-000000?style=for-the-badge&labelColor=E34F26&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-Expert-000000?style=for-the-badge&labelColor=1572B6&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-Expert-000000?style=for-the-badge&labelColor=F05032&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-Expert-000000?style=for-the-badge&labelColor=181717&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-Expert-000000?style=for-the-badge&labelColor=339933&logo=node.js&logoColor=white" />
 </p>
 
 ---
