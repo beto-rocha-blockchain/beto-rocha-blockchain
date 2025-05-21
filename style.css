@@ -166,3 +166,23 @@ footer {
   font-size: 1.1rem;
   color: #bcaeff;
 }
+
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    margin-bottom: 1rem;
+  }
+
+  .texto-header h1 {
+    font-size: 2rem;
+  }
+
+  .texto-header p {
+    font-size: 1rem;
+  }
+}
+
