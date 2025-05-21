@@ -105,3 +105,14 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid #33334d;
 }
+
+.foto-perfil {
+  width: 180px;
+  height: auto;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  border: 3px solid #8e44ff; /* Combina com a cor da seção "about" */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto 2rem auto; /* Centraliza e dá espaço abaixo */
+}
+
