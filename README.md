@@ -57,7 +57,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 ### 💼 My skillset includes:
 
 - Development of secure and scalable **dApps**
-- Writing and testing **smart contracts** using Solidity
+- Writing and testing **smart contracts** using Solidity, Cairo and Rust.
 - Connecting wallets using **Web3.js** and **Ethers.js**
 - Building APIs with Flask and FastAPI in Python
 - Crafting Web3 interfaces with React and modern frameworks
@@ -112,7 +112,7 @@ Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockcha
 ### 💼 Minhas habilidades incluem:
 
 - Desenvolvimento de **dApps** seguros e escaláveis
-- Criação e testes de **smart contracts** em Solidity
+- Criação e testes de **smart contracts** em Solidity, Cairo e Rust.
 - Conexão de carteiras com **Web3.js** e **Ethers.js**
 - Construção de APIs em Python com Flask e FastAPI
 - Interfaces Web3 com React.js e frameworks modernos
