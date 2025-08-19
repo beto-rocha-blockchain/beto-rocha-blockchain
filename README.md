@@ -106,7 +106,7 @@ Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockcha
   <img src="https://img.shields.io/badge/Git-Especialista-000000?style=for-the-badge&labelColor=F05032&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-Especialista-000000?style=for-the-badge&labelColor=181717&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-Especialista-000000?style=for-the-badge&labelColor=339933&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebAssembly-Expert-000000?style=for-the-badge&labelColor=654FF0&logo=webassembly&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebAssembly-Especialista-000000?style=for-the-badge&labelColor=654FF0&logo=webassembly&logoColor=white" />
 </p>
 
 ---
