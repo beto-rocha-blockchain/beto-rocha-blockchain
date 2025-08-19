@@ -5,7 +5,7 @@
 <p align="center">
   <svg width="450" height="60">
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="22" fill="#0984e3">
-      Blockchain Specialist | Solidity • JS • Python
+      Blockchain Specialist | Rust • Solidity • JS • Python
     </text>
   </svg>
 </p>
@@ -29,7 +29,7 @@
 
 ## 🇺🇸 About me
 
-I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**, focusing on **smart contracts**, **Web3 interfaces**, **dApps (decentralized applications)** and **ZkVerify**. I’m proficient in **Solidity**, **Python**, **JavaScript**, **React**, **Hardhat**, **Web3.js**, **Foundry** and **Rust**, building secure and scalable blockchain solutions from the backend to the frontend.
+I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**, focusing on **smart contracts**, **Web3 interfaces**, **dApps (decentralized applications)** and **ZkVerify**. I’m proficient in **Solidity**, **Python**, **JavaScript**, **React**, **Hardhat**, **Web3.js**, **Foundry**, **Rust** and **WebAssembly**, building secure and scalable blockchain solutions from the backend to the frontend.
 
 ---
 
@@ -50,6 +50,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
   <img src="https://img.shields.io/badge/Git-Expert-000000?style=for-the-badge&labelColor=F05032&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-Expert-000000?style=for-the-badge&labelColor=181717&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-Expert-000000?style=for-the-badge&labelColor=339933&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebAssembly-Expert-000000?style=for-the-badge&labelColor=654FF0&logo=webassembly&logoColor=white" />  
 </p>
 
 ---
@@ -84,7 +85,7 @@ I’m **Roberto Pimentel**, a **fullstack developer specialized in Blockchain**,
 
 ## 🇧🇷 Sobre mim
 
-Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockchain**, com foco em **contratos inteligentes**, **interfaces Web3** e aplicações descentralizadas. Sou proficiente em **Solidity**, **Python**, **JavaScript**, **React**, **Hardhat**, **Web3.js**, **Foundry** e **Rust**, construindo soluções de blockchain seguras e escaláveis ​​do backend ao frontend.
+Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockchain**, com foco em **contratos inteligentes**, **interfaces Web3** e aplicações descentralizadas. Sou proficiente em **Solidity**, **Python**, **JavaScript**, **React**, **Hardhat**, **Web3.js**, **Foundry**, **Rust** e **WebAssembly**, construindo soluções de blockchain seguras e escaláveis ​​do backend ao frontend.
 
 ---
 
@@ -105,6 +106,7 @@ Sou **Roberto Pimentel**, um **desenvolvedor fullstack especializado em Blockcha
   <img src="https://img.shields.io/badge/Git-Especialista-000000?style=for-the-badge&labelColor=F05032&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-Especialista-000000?style=for-the-badge&labelColor=181717&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-Especialista-000000?style=for-the-badge&labelColor=339933&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebAssembly-Expert-000000?style=for-the-badge&labelColor=654FF0&logo=webassembly&logoColor=white" />
 </p>
 
 ---
