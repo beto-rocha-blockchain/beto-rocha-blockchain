@@ -71,7 +71,7 @@ Meu produto principal, o **GridLedger**, e um livro-razao de liquidacao a prova 
 
 ### Tech Stack
 
-<img src="https://skillicons.dev/icons?i=solidity,rust,python,js,ts,react,nodejs,wasm,docker,git,github,vercel&theme=dark&perline=12" alt="Tech stack icons" />
+<img src="https://skillicons.dev/icons?i=solidity,rust,python,js,ts,react,nodejs,wasm,supabase,docker,git,github,vercel&theme=dark&perline=13" alt="Tech stack icons" />
 
 <br/><br/>
 
@@ -103,6 +103,7 @@ Meu produto principal, o **GridLedger**, e um livro-razao de liquidacao a prova 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
