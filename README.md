@@ -148,7 +148,7 @@ Meu produto principal, o **GridLedger**, e um livro-razao de liquidacao a prova 
     </tr>
     <tr>
       <td><a href="https://github.com/beto-rocha-blockchain/StellarGrid"><b>StellarGrid</b></a></td>
-      <td>Stellar-based energy grid tooling and on-chain grid primitives.</td>
+      <td>Renewable-energy tokenization on Stellar/Soroban - STRGRID token (1 token = 1 kWh): Soroban smart contract live on testnet + oracle REST API.</td>
       <td align="center"><a href="https://github.com/beto-rocha-blockchain/StellarGrid/stargazers"><img src="https://img.shields.io/github/stars/beto-rocha-blockchain/StellarGrid?style=flat&labelColor=0D1117&color=39D353" alt="Stars" /></a></td>
       <td align="center"><img src="https://img.shields.io/github/languages/top/beto-rocha-blockchain/StellarGrid?style=flat&labelColor=0D1117&color=22D3EE" alt="Top language" /></td>
     </tr>
