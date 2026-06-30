@@ -38,7 +38,7 @@
 >
 > My work sits where **energy trading meets cryptography**: smart contracts on **Stellar + Soroban**, settlement in **stablecoins**, machine-to-machine payments via **x402**, and **WebAssembly** for portable, deterministic on-chain logic. I also build with **Zero-Knowledge proofs** to keep commercially sensitive trades private while staying verifiable.
 >
-> My flagship product, **GridLedger**, is a tamper-proof settlement ledger that **prevents double-selling of energy positions** on Stellar - giving counterparties cryptographic certainty that every megawatt-hour is sold exactly once.
+> Alongside the protocol, I'm building **EnergyPay's settlement & clearing core** - a flagship product still in **stealth** (details under wraps until launch).
 
 <div align="center">
 
@@ -53,10 +53,10 @@ Sou **engenheiro fullstack & Web3** e **fundador da EnergyPay** - construindo **
 
 Meu trabalho une **comercializacao de energia e criptografia**: contratos inteligentes em **Stellar + Soroban**, liquidacao em **stablecoins**, pagamentos maquina-a-maquina via **x402** e **WebAssembly** para logica on-chain portavel e deterministica. Tambem atuo com **provas de conhecimento zero (ZK)** para manter operacoes comercialmente sensiveis privadas, porem verificaveis.
 
-Meu produto principal, o **GridLedger**, e um livro-razao de liquidacao a prova de adulteracao que **impede a venda em duplicidade de posicoes de energia** na Stellar - garantindo a cada contraparte a certeza criptografica de que cada MWh e vendido exatamente uma vez.
+Em paralelo ao protocolo, construo o **nucleo de liquidacao e clearing do EnergyPay** - um produto-carro-chefe ainda em **stealth** (detalhes reservados ate o lancamento).
 
 - Construindo a **EnergyPay** - trilhos de liquidacao para o ACL, do testnet a mainnet
-- Lancando o **GridLedger** - um livro-razao a prova de dupla venda
+- Desenvolvendo o **nucleo de liquidacao do EnergyPay** - um produto ainda nao lancado (stealth)
 - Pesquisando **provas ZK** para mercados de energia privados e verificaveis
 - Sediado em **Petropolis, Rio de Janeiro** - construindo para o Web3 global e o setor eletrico brasileiro
 
@@ -155,7 +155,7 @@ Meu produto principal, o **GridLedger**, e um livro-razao de liquidacao a prova 
   </tbody>
 </table>
 
-<sub><i>GridLedger - a tamper-proof settlement ledger preventing double-selling of energy positions on Stellar - powers EnergyPay's clearing core and is in private development.</i></sub>
+<sub><i>EnergyPay's settlement & clearing core is in stealth development - more to be announced at launch.</i></sub>
 
 </div>
 
