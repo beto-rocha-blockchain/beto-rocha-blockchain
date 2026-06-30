@@ -9,7 +9,7 @@
 <!-- ===================== HEADER ===================== -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,50:7C3AED,100:0D1117&height=200&section=header&text=Roberto%20Pimentel&fontColor=FFFFFF&fontSize=40&fontAlignY=36&desc=Founder%20@%20EnergyPay%20%C2%B7%20Web3%20%26%20Blockchain%20Engineer&descAlignY=56&descSize=16&animation=fadeIn" alt="Roberto Pimentel - Founder @ EnergyPay" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,50:7C3AED,100:0D1117&height=200&section=header&text=Roberto%20Pimentel&fontColor=FFFFFF&fontSize=40&fontAlignY=36&desc=Founder%20@%20EnergyPay%20%C2%B7%20Web3%20and%20Blockchain%20Engineer&descAlignY=56&descSize=16&animation=fadeIn" alt="Roberto Pimentel - Founder @ EnergyPay" width="100%" />
 
 <!-- ===================== TYPING HEADLINE ===================== -->
 <a href="https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/">
