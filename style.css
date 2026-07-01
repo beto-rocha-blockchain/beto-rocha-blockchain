@@ -374,6 +374,17 @@ blockquote { margin: 0; }
 .float-card__v { font-size: .72rem; color: var(--muted); max-width: 14ch; }
 @keyframes floaty { 50% { transform: translateY(-12px); } }
 
+/* contact form + visitor counter */
+.contact-form { display: flex; flex-direction: column; gap: .75rem; margin: 1.6rem auto 0; max-width: 540px; text-align: left; }
+.contact-form__row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.contact-form__input { width: 100%; padding: .8rem 1rem; border-radius: 10px; background: rgba(13,17,23,.55); border: 1px solid var(--border-soft); color: #E6EDF3; font-family: inherit; font-size: .95rem; }
+.contact-form__input::placeholder { color: #8B949E; }
+.contact-form__input:focus { outline: none; border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(34,211,238,.15); }
+.contact-form__textarea { resize: vertical; min-height: 96px; }
+.contact-form__submit { align-self: flex-start; }
+.footer__counter { height: 26px; display: inline-block; vertical-align: middle; }
+@media (max-width: 480px) { .contact-form__row { grid-template-columns: 1fr; } }
+
 /* metric tiles */
 .metrics {
   position: relative; z-index: 1;
