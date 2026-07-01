@@ -383,6 +383,7 @@ blockquote { margin: 0; }
 .contact-form__textarea { resize: vertical; min-height: 96px; }
 .contact-form__submit { align-self: flex-start; }
 .footer__counter { height: 26px; display: inline-block; vertical-align: middle; }
+.product__roadmap { margin: 1.4rem auto 0; max-width: 720px; text-align: center; color: var(--muted); font-size: .92rem; line-height: 1.6; }
 @media (max-width: 480px) { .contact-form__row { grid-template-columns: 1fr; } }
 
 /* metric tiles */
