@@ -248,8 +248,7 @@ blockquote { margin: 0; }
 .brand__mark { display: grid; place-items: center; filter: drop-shadow(0 4px 10px rgba(34,211,238,.4)); }
 .brand__name { font-size: 1.15rem; letter-spacing: -0.02em; }
 .brand__accent {
-  background: var(--grad); -webkit-background-clip: text; background-clip: text;
-  -webkit-text-fill-color: transparent; color: transparent;
+  color: #66E619; -webkit-text-fill-color: #66E619;
 }
 
 .nav__links { display: flex; gap: 1.4rem; margin-left: auto; }
