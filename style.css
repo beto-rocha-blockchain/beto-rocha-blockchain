@@ -366,8 +366,11 @@ blockquote { margin: 0; }
 }
 .float-card--a { top: 4%; right: -4%; animation-delay: 0s; }
 .float-card--b { bottom: 6%; left: -8%; animation-delay: 1.4s; }
+.float-card--c { top: 4%; left: -6%; animation-delay: .7s; }
+.float-card--d { bottom: 6%; right: -6%; animation-delay: 2.1s; }
 .float-card__k { font-family: var(--font-mono); font-weight: 600; color: var(--cyan); font-size: .92rem; }
 .float-card--b .float-card__k { color: #a78bfa; }
+.float-card--c .float-card__k { color: #39D353; }
 .float-card__v { font-size: .72rem; color: var(--muted); max-width: 14ch; }
 @keyframes floaty { 50% { transform: translateY(-12px); } }
 
@@ -697,6 +700,7 @@ blockquote { margin: 0; }
   .hero__stats { gap: 1.3rem; }
   .float-card--a { right: 0; top: 0; }
   .float-card--b { left: 0; }
+  .float-card--c, .float-card--d { display: none; }
 }
 
 @media (max-width: 480px) {
