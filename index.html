@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
+  <link rel="icon" type="image/svg+xml" href="assets/energypay-favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -34,15 +35,16 @@
     <div class="container nav__inner">
       <a class="brand" href="#topo" aria-label="EnergyPay — início">
         <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 2 4.5 13.2A.9.9 0 0 0 5.2 14.6H10l-1 7.4 9.5-12.2a.9.9 0 0 0-.7-1.4H13l0-6.4Z" fill="url(#boltGrad)"/>
+          <svg viewBox="0 0 100 100" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="boltGrad" x1="4" y1="2" x2="20" y2="22" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#22D3EE"/>
-                <stop offset="0.55" stop-color="#7C3AED"/>
-                <stop offset="1" stop-color="#39D353"/>
+              <linearGradient id="epBrandGrad" x1="50" y1="8" x2="50" y2="92" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#66E619"/>
+                <stop offset="100%" stop-color="#00C8EE"/>
               </linearGradient>
             </defs>
+            <path d="M 74.7 16 A 42 42 0 0 1 50.7 92" fill="none" stroke="url(#epBrandGrad)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M 29.6 86.7 A 42 42 0 0 1 54.4 8.2" fill="none" stroke="url(#epBrandGrad)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M 64 11 L 27 52 H 46 L 42 89 L 73 48 H 54 Z" fill="url(#epBrandGrad)"/>
           </svg>
         </span>
         <span class="brand__name">Energy<span class="brand__accent">Pay</span></span>
