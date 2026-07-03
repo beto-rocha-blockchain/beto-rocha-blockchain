@@ -710,9 +710,11 @@ blockquote { margin: 0; }
   .cards { grid-template-columns: 1fr; }
   .stack-groups { grid-template-columns: 1fr; }
   .hero__stats { gap: 1.3rem; }
+  .float-card { padding: .5rem .75rem; }
   .float-card--a { right: 0; top: 0; }
-  .float-card--b { left: 0; }
-  .float-card--c, .float-card--d { display: none; }
+  .float-card--b { left: 0; bottom: 0; }
+  .float-card--c { left: 0; top: 0; }
+  .float-card--d { right: 0; bottom: 0; }
 }
 
 @media (max-width: 480px) {
@@ -721,7 +723,9 @@ blockquote { margin: 0; }
 }
 
 @media (max-width: 420px) {
-  .float-card { display: none; }
+  .float-card { padding: .4rem .65rem; border-radius: 10px; }
+  .float-card__k { font-size: .8rem; }
+  .float-card__v { display: none; }
   .hero { padding-top: 2.5rem; }
 }
 
