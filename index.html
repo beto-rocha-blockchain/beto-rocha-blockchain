@@ -535,53 +535,104 @@
             </div>
           </article>
 
-          <!-- EnerTradeZK -->
+          <!-- energypay-x402-kit -->
           <article class="card grad-border reveal">
             <div class="grad-border__inner card__inner">
               <div class="card__top">
-                <span class="card__tag">ZK</span>
+                <span class="card__tag">x402</span>
                 <span class="card__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 14h2m4 0h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
                 </span>
               </div>
-              <h3 class="card__title">EnerTradeZK</h3>
-              <p class="card__desc" data-i18n="proj.zk.desc">Trading de energia tokenizada com provas de conhecimento zero: negocie com privacidade e verificabilidade.</p>
+              <h3 class="card__title">EnergyPay x402 Kit</h3>
+              <p class="card__desc" data-i18n="proj.x402.desc">Middleware de paywall x402 reutilizável para Stellar + API de dados de energia pagável por agentes de IA.</p>
               <div class="card__links">
-                <a href="https://github.com/beto-rocha-blockchain/EnerTradeZK" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
+                <a href="https://github.com/beto-rocha-blockchain/energypay-x402-kit" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
               </div>
             </div>
           </article>
 
-          <!-- StellarGrid -->
+          <!-- stellar-agent-pay -->
           <article class="card grad-border reveal">
             <div class="grad-border__inner card__inner">
               <div class="card__top">
-                <span class="card__tag" data-i18n="proj.grid.tag">Tokenização</span>
-                <span class="card__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 2l3 6 6 .8-4.5 4.3L18 20l-6-3.4L6 20l1.5-6.9L3 8.8 9 8l3-6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                </span>
-              </div>
-              <h3 class="card__title">StellarGrid</h3>
-              <p class="card__desc" data-i18n="proj.grid.desc">Tokenização de energia renovável na Stellar/Soroban. Token STRGRID com lastro direto: 1 token = 1 kWh.</p>
-              <div class="card__links">
-                <a href="https://github.com/beto-rocha-blockchain/StellarGrid" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- server-rust-1 -->
-          <article class="card grad-border reveal">
-            <div class="grad-border__inner card__inner">
-              <div class="card__top">
-                <span class="card__tag">Rust</span>
+                <span class="card__tag">x402 · CLI</span>
                 <span class="card__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 9l3 3-3 3M13 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
               </div>
-              <h3 class="card__title">server-rust-1</h3>
-              <p class="card__desc" data-i18n="proj.rust.desc">Servidor em Rust explorando ownership/borrowing e empacotamento com Docker — performance e segurança de memória.</p>
+              <h3 class="card__title">Stellar Agent Pay</h3>
+              <p class="card__desc" data-i18n="proj.agent.desc">Plugin de CLI que fecha o ciclo x402 de pagar-e-desbloquear (402) direto do terminal.</p>
               <div class="card__links">
-                <a href="https://github.com/beto-rocha-blockchain/server-rust-1" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
+                <a href="https://github.com/beto-rocha-blockchain/stellar-agent-pay" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- energypay-b2b-confidential -->
+          <article class="card grad-border reveal">
+            <div class="grad-border__inner card__inner">
+              <div class="card__top">
+                <span class="card__tag">Rust · ZK</span>
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+              <h3 class="card__title">B2B Confidential</h3>
+              <p class="card__desc" data-i18n="proj.b2b.desc">Gateway de liquidação B2B confidencial para o mercado livre de energia do Brasil, em Rust.</p>
+              <div class="card__links">
+                <a href="https://github.com/beto-rocha-blockchain/energypay-b2b-confidential" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- energypay-ramp-kit -->
+          <article class="card grad-border reveal">
+            <div class="grad-border__inner card__inner">
+              <div class="card__top">
+                <span class="card__tag">SEP-38</span>
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M8 6 3 12l5 6M16 6l5 6-5 6M13 4l-2 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+              <h3 class="card__title">EnergyPay Ramp Kit</h3>
+              <p class="card__desc" data-i18n="proj.ramp.desc">Roteador de rampas on/off multi-âncora para a América Latina, com SEP-38 como base de conformidade.</p>
+              <div class="card__links">
+                <a href="https://github.com/beto-rocha-blockchain/energypay-ramp-kit" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- energypay-confidential-wallet -->
+          <article class="card grad-border reveal">
+            <div class="grad-border__inner card__inner">
+              <div class="card__top">
+                <span class="card__tag">Wallet · ZK</span>
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><rect x="4" y="11" width="16" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+              <h3 class="card__title">Confidential Wallet</h3>
+              <p class="card__desc" data-i18n="proj.wallet.desc">Carteira de tokens confidenciais + indexador de eventos durável para a Stellar.</p>
+              <div class="card__links">
+                <a href="https://github.com/beto-rocha-blockchain/energypay-confidential-wallet" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- energypay-tesouro-yield -->
+          <article class="card grad-border reveal">
+            <div class="grad-border__inner card__inner">
+              <div class="card__top">
+                <span class="card__tag">DeFi</span>
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+              <h3 class="card__title">Tesouro Yield</h3>
+              <p class="card__desc" data-i18n="proj.yield.desc">App de yield com stablebonds, focado no Brasil, que separa o rendimento real da variação cambial.</p>
+              <div class="card__links">
+                <a href="https://github.com/beto-rocha-blockchain/energypay-tesouro-yield" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
               </div>
             </div>
           </article>
@@ -732,9 +783,12 @@
           "proj.kicker": "Em produção &amp; open source", "proj.title": "Projetos em destaque", "proj.sub": "Tudo público e auditável no GitHub — energia, criptografia e os trilhos que conectam os dois.",
           "proj.code": "Código ↗",
           "proj.ep.tag": "Em mainnet", "proj.ep.desc": "Pré-camada de liquidação para o mercado livre de energia (ACL): contratos registrados e auditáveis na rede Stellar mainnet — em produção, com usuários e transações reais.",
-          "proj.zk.desc": "Trading de energia tokenizada com provas de conhecimento zero: negocie com privacidade e verificabilidade.",
-          "proj.grid.tag": "Tokenização", "proj.grid.desc": "Tokenização de energia renovável na Stellar/Soroban. Token STRGRID com lastro direto: 1 token = 1 kWh.",
-          "proj.rust.desc": "Servidor em Rust explorando ownership/borrowing e empacotamento com Docker — performance e segurança de memória.",
+          "proj.x402.desc": "Middleware de paywall x402 reutilizável para Stellar + API de dados de energia pagável por agentes de IA.",
+          "proj.agent.desc": "Plugin de CLI que fecha o ciclo x402 de pagar-e-desbloquear (402) direto do terminal.",
+          "proj.b2b.desc": "Gateway de liquidação B2B confidencial para o mercado livre de energia do Brasil, em Rust.",
+          "proj.ramp.desc": "Roteador de rampas on/off multi-âncora para a América Latina, com SEP-38 como base de conformidade.",
+          "proj.wallet.desc": "Carteira de tokens confidenciais + indexador de eventos durável para a Stellar.",
+          "proj.yield.desc": "App de yield com stablebonds, focado no Brasil, que separa o rendimento real da variação cambial.",
           "proj.more.h": "Mais no GitHub", "proj.more.desc": "Experimentos, protótipos e ferramentas open source.", "proj.more.link": "Ver perfil completo ↗",
           "contact.kicker": "Vamos conversar",
           "contact.title": "Construindo a camada de confiança do mercado de <span class=\"grad-text\">energia</span>.",
@@ -794,9 +848,12 @@
           "proj.kicker": "In production &amp; open source", "proj.title": "Featured projects", "proj.sub": "All public and auditable on GitHub — energy, cryptography and the rails that connect the two.",
           "proj.code": "Code ↗",
           "proj.ep.tag": "On mainnet", "proj.ep.desc": "Settlement pre-layer for the free energy market (ACL): contracts registered and auditable on the Stellar mainnet — in production, with real users and transactions.",
-          "proj.zk.desc": "Tokenized energy trading with zero-knowledge proofs: trade with privacy and verifiability.",
-          "proj.grid.tag": "Tokenization", "proj.grid.desc": "Renewable-energy tokenization on Stellar/Soroban. STRGRID token with direct backing: 1 token = 1 kWh.",
-          "proj.rust.desc": "A Rust server exploring ownership/borrowing and Docker packaging — performance and memory safety.",
+          "proj.x402.desc": "Reusable x402 paywall middleware for Stellar + an agent-payable energy-data API.",
+          "proj.agent.desc": "A CLI plugin that completes the x402 pay-to-unlock (402) loop straight from the terminal.",
+          "proj.b2b.desc": "Confidential B2B settlement gate for Brazil's free energy market, written in Rust.",
+          "proj.ramp.desc": "Multi-anchor LATAM on/off-ramp router with SEP-38 as the conformance baseline.",
+          "proj.wallet.desc": "Confidential-token wallet plus a durable event indexer for Stellar.",
+          "proj.yield.desc": "Brazil-first stablebond yield app that separates real yield from FX.",
           "proj.more.h": "More on GitHub", "proj.more.desc": "Experiments, prototypes and open-source tools.", "proj.more.link": "View full profile ↗",
           "contact.kicker": "Let's talk",
           "contact.title": "Building the trust layer of the <span class=\"grad-text\">energy</span> market.",
@@ -856,9 +913,12 @@
           "proj.kicker": "En producción y open source", "proj.title": "Proyectos destacados", "proj.sub": "Todo público y auditable en GitHub — energía, criptografía y los rieles que conectan a ambos.",
           "proj.code": "Código ↗",
           "proj.ep.tag": "En mainnet", "proj.ep.desc": "Precapa de liquidación para el mercado libre de energía (ACL): contratos registrados y auditables en la red Stellar mainnet — en producción, con usuarios y transacciones reales.",
-          "proj.zk.desc": "Trading de energía tokenizada con pruebas de conocimiento cero: negocia con privacidad y verificabilidad.",
-          "proj.grid.tag": "Tokenización", "proj.grid.desc": "Tokenización de energía renovable en Stellar/Soroban. Token STRGRID con respaldo directo: 1 token = 1 kWh.",
-          "proj.rust.desc": "Servidor en Rust explorando ownership/borrowing y empaquetado con Docker — rendimiento y seguridad de memoria.",
+          "proj.x402.desc": "Middleware de paywall x402 reutilizable para Stellar + API de datos de energía pagable por agentes de IA.",
+          "proj.agent.desc": "Plugin de CLI que completa el ciclo x402 de pagar-y-desbloquear (402) desde la terminal.",
+          "proj.b2b.desc": "Puerta de liquidación B2B confidencial para el mercado libre de energía de Brasil, en Rust.",
+          "proj.ramp.desc": "Enrutador de rampas on/off multi-áncora para LATAM, con SEP-38 como base de conformidad.",
+          "proj.wallet.desc": "Billetera de tokens confidenciales + indexador de eventos duradero para Stellar.",
+          "proj.yield.desc": "App de yield con stablebonds, enfocada en Brasil, que separa el rendimiento real del tipo de cambio.",
           "proj.more.h": "Más en GitHub", "proj.more.desc": "Experimentos, prototipos y herramientas open source.", "proj.more.link": "Ver perfil completo ↗",
           "contact.kicker": "Hablemos",
           "contact.title": "Construyendo la capa de confianza del mercado de <span class=\"grad-text\">energía</span>.",
