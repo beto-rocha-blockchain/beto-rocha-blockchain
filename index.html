@@ -31,6 +31,8 @@
     .lang-switch button[aria-pressed="true"]{color:#04222b;background:var(--cyan);}
     .lang-switch button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;}
     @media (max-width:460px){ .status-pill{display:none;} }
+    /* photo + floating-card wrapper — cards float around the photo, clear of the social row below */
+    .portrait-fx{position:relative;width:100%;display:grid;place-items:center;}
     /* social row under the portrait photo */
     .portrait__social{display:flex;justify-content:center;gap:.8rem;margin-top:1.9rem;position:relative;z-index:6;}
     .portrait__social a{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;color:var(--text);background:var(--panel-2);border:1px solid var(--border-soft);box-shadow:var(--shadow-soft);transition:color .18s var(--ease),border-color .18s var(--ease),transform .18s var(--ease),box-shadow .18s var(--ease);}
@@ -140,6 +142,7 @@
         </div>
 
         <div class="hero__visual reveal">
+          <div class="portrait-fx">
           <div class="portrait">
             <div class="portrait__ring"></div>
             <img class="portrait__img" src="assets/images/minha-foto.png" alt="Retrato de Roberto Pimentel, fundador da EnergyPay" width="320" height="320" loading="eager" />
@@ -147,6 +150,7 @@
               <span class="portrait__badge-dot" aria-hidden="true"></span>
               Founder · Web3 &amp; AI
             </div>
+          </div>
             <div class="float-card float-card--a" aria-hidden="true">
               <span class="float-card__k">x402</span>
               <span class="float-card__v" data-i18n="float.x402">pagamentos máquina-a-máquina</span>
