@@ -22,13 +22,24 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/energypay-favicon.svg" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Language switcher (PT / EN / ES) -->
+  <style>
+    .lang-switch{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid var(--border);border-radius:999px;background:var(--panel);}
+    .lang-switch button{appearance:none;border:0;background:transparent;color:var(--muted);font-family:var(--font-mono);font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:.32rem .5rem;border-radius:999px;cursor:pointer;line-height:1;transition:color .18s var(--ease),background .18s var(--ease);}
+    .lang-switch button:hover{color:var(--text);}
+    .lang-switch button[aria-pressed="true"]{color:#04222b;background:var(--cyan);}
+    .lang-switch button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;}
+    @media (max-width:460px){ .status-pill{display:none;} }
+    @media (prefers-reduced-motion:reduce){ .lang-switch button{transition:none;} }
+  </style>
 </head>
 <body>
   <!-- Decorative background layers -->
   <div class="bg-aurora" aria-hidden="true"></div>
   <div class="bg-grid" aria-hidden="true"></div>
 
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo" data-i18n="nav.skip">Pular para o conteúdo</a>
 
   <!-- ===================== NAV ===================== -->
   <header class="nav" id="topo">
@@ -51,14 +62,19 @@
       </a>
 
       <nav class="nav__links" aria-label="Navegação principal">
-        <a href="#energypay">Produto</a>
-        <a href="#sobre">Fundador</a>
-        <a href="#stack">Stack</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <a href="#energypay" data-i18n="nav.product">Produto</a>
+        <a href="#sobre" data-i18n="nav.founder">Fundador</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
       </nav>
 
       <div class="nav__right">
+        <div class="lang-switch" role="group" aria-label="Idioma / Language / Idioma">
+          <button type="button" data-lang="pt" aria-pressed="true" lang="pt">PT</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+        </div>
         <span class="status-pill" title="Protocolo em produção">
           <span class="status-pill__dot" aria-hidden="true"></span>
           mainnet <span class="status-pill__sep">/</span> online
@@ -80,38 +96,38 @@
         <div class="hero__copy">
           <p class="hero__eyebrow reveal">
             <span class="pulse-dot" aria-hidden="true"></span>
-            Protocolo no ar &middot; <strong>deploy em mainnet</strong>
+            <span data-i18n="hero.eyebrow">Protocolo no ar &middot; <strong>deploy em mainnet</strong></span>
           </p>
 
-          <h1 id="hero-title" class="hero__title reveal">
+          <h1 id="hero-title" class="hero__title reveal" data-i18n="hero.title">
             A pré-camada de
             <span class="grad-text">liquidação</span>
             do mercado de energia.
           </h1>
 
-          <p class="hero__lead reveal">
+          <p class="hero__lead reveal" data-i18n="hero.lead">
             <strong>EnergyPay</strong> é a pré-camada de liquidação do mercado livre de energia (ACL):
             registra contratos para controle e auditoria dos recebíveis, com rastro verificável na rede Stellar.
             Construído na interseção entre engenharia de software, criptografia e o mercado de energia.
           </p>
 
           <div class="hero__cta reveal">
-            <a class="btn btn--primary" href="https://energypay-protocol-mainnet.vercel.app" target="_blank" rel="noopener noreferrer">Ver o EnergyPay</a>
+            <a class="btn btn--primary" href="https://energypay-protocol-mainnet.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="btn.view">Ver o EnergyPay</a>
             <a class="btn btn--ghost" href="https://github.com/beto-rocha-blockchain" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a class="btn btn--ghost" href="https://www.linkedin.com/in/robertoblockchainresources" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
 
           <dl class="hero__stats reveal" aria-label="Indicadores do protocolo">
             <div class="stat">
-              <dt>Status</dt>
-              <dd><span class="stat__pill stat__pill--live">Em mainnet</span></dd>
+              <dt data-i18n="stat.status.k">Status</dt>
+              <dd><span class="stat__pill stat__pill--live" data-i18n="stat.status.v">Em mainnet</span></dd>
             </div>
             <div class="stat">
-              <dt>Recebíveis</dt>
-              <dd>Auditáveis</dd>
+              <dt data-i18n="stat.recv.k">Recebíveis</dt>
+              <dd data-i18n="stat.recv.v">Auditáveis</dd>
             </div>
             <div class="stat">
-              <dt>Base</dt>
+              <dt data-i18n="stat.base.k">Base</dt>
               <dd>Stellar (mainnet)</dd>
             </div>
           </dl>
@@ -129,19 +145,19 @@
 
           <div class="float-card float-card--a" aria-hidden="true">
             <span class="float-card__k">x402</span>
-            <span class="float-card__v">pagamentos máquina-a-máquina</span>
+            <span class="float-card__v" data-i18n="float.x402">pagamentos máquina-a-máquina</span>
           </div>
           <div class="float-card float-card--b" aria-hidden="true">
             <span class="float-card__k">ZK</span>
-            <span class="float-card__v">privado &amp; verificável</span>
+            <span class="float-card__v" data-i18n="float.zk">privado &amp; verificável</span>
           </div>
           <div class="float-card float-card--c" aria-hidden="true">
             <span class="float-card__k">Rust</span>
-            <span class="float-card__v">memória segura &amp; veloz</span>
+            <span class="float-card__v" data-i18n="float.rust">memória segura &amp; veloz</span>
           </div>
           <div class="float-card float-card--d" aria-hidden="true">
             <span class="float-card__k">WASM</span>
-            <span class="float-card__v">portátil &amp; determinística</span>
+            <span class="float-card__v" data-i18n="float.wasm">portátil &amp; determinística</span>
           </div>
         </div>
       </div>
@@ -152,22 +168,22 @@
           <div class="metric">
             <span class="metric__k mono">mainnet</span>
             <span class="metric__v c-green">LIVE</span>
-            <span class="metric__d">deploy de produção</span>
+            <span class="metric__d" data-i18n="metric.deploy">deploy de produção</span>
           </div>
           <div class="metric">
             <span class="metric__k mono">stack</span>
-            <span class="metric__v">Web3 + Energia</span>
+            <span class="metric__v" data-i18n="metric.stackv">Web3 + Energia</span>
             <span class="metric__d">Stellar · x402 · Supabase</span>
           </div>
           <div class="metric">
-            <span class="metric__k mono">recebíveis</span>
-            <span class="metric__v">auditáveis</span>
-            <span class="metric__d">rastro on-chain</span>
+            <span class="metric__k mono" data-i18n="metric.recvk">recebíveis</span>
+            <span class="metric__v" data-i18n="metric.recvv">auditáveis</span>
+            <span class="metric__d" data-i18n="metric.recvd">rastro on-chain</span>
           </div>
           <div class="metric">
-            <span class="metric__k mono">mercado</span>
+            <span class="metric__k mono" data-i18n="metric.mktk">mercado</span>
             <span class="metric__v">ACL</span>
-            <span class="metric__d">mercado livre de energia</span>
+            <span class="metric__d" data-i18n="metric.mktd">mercado livre de energia</span>
           </div>
         </div>
       </div>
@@ -182,7 +198,7 @@
           <span>Zero-Knowledge</span><span aria-hidden="true">·</span>
           <span>Stablecoins</span><span aria-hidden="true">·</span>
           <span>x402</span><span aria-hidden="true">·</span>
-          <span>Mercado Livre de Energia</span><span aria-hidden="true">·</span>
+          <span data-i18n="marquee.acl">Mercado Livre de Energia</span><span aria-hidden="true">·</span>
           <span>Stellar</span><span aria-hidden="true">·</span>
           <span>Soroban</span><span aria-hidden="true">·</span>
           <span>Rust</span><span aria-hidden="true">·</span>
@@ -190,7 +206,7 @@
           <span>Zero-Knowledge</span><span aria-hidden="true">·</span>
           <span>Stablecoins</span><span aria-hidden="true">·</span>
           <span>x402</span><span aria-hidden="true">·</span>
-          <span>Mercado Livre de Energia</span><span aria-hidden="true">·</span>
+          <span data-i18n="marquee.acl">Mercado Livre de Energia</span><span aria-hidden="true">·</span>
         </div>
       </div>
     </section>
@@ -199,9 +215,9 @@
     <section class="section" id="energypay" aria-labelledby="energypay-title">
       <div class="container">
         <div class="section__head reveal">
-          <span class="kicker">O produto</span>
+          <span class="kicker" data-i18n="ep.kicker">O produto</span>
           <h2 id="energypay-title" class="section__title">EnergyPay</h2>
-          <p class="section__sub">
+          <p class="section__sub" data-i18n="ep.sub">
             Pré-camada de liquidação para o setor elétrico: registro, controle e auditoria de recebíveis.
             Programável, auditável e pronta para a expansão do mercado livre — que a Lei 15.269/2025 leva de
             ~85 mil para mais de 20 milhões de unidades consumidoras.
@@ -214,10 +230,10 @@
             <div class="grad-border__inner">
               <span class="badge badge--live">
                 <span class="badge__dot" aria-hidden="true"></span>
-                Marco recente · em mainnet com usuários e transações reais
+                <span data-i18n="ep.badge">Marco recente · em mainnet com usuários e transações reais</span>
               </span>
-              <h3 class="product__h">Registro e auditoria de recebíveis, on-chain</h3>
-              <p class="product__p">
+              <h3 class="product__h" data-i18n="ep.h">Registro e auditoria de recebíveis, on-chain</h3>
+              <p class="product__p" data-i18n="ep.p">
                 O EnergyPay é a <strong>pré-camada de liquidação</strong> do Ambiente de Contratação Livre (ACL):
                 os contratos são registrados na plataforma para <strong>controle e auditoria dos recebíveis</strong>,
                 com rastro verificável de ponta a ponta na rede Stellar — reduzindo risco de contraparte e a
@@ -227,12 +243,12 @@
 
               <!-- mini terminal log destacando MAINNET -->
               <div class="console mono" role="img" aria-label="Log destacando o deploy em mainnet">
-                <p class="line out"><span class="dim">›</span> registrar recebíveis ....... <span class="ok">done</span></p>
-                <p class="line out"><span class="dim">›</span> reconciliação on-chain ..... <span class="ok">done</span></p>
+                <p class="line out" data-i18n="ep.log1"><span class="dim">›</span> registrar recebíveis ....... <span class="ok">done</span></p>
+                <p class="line out" data-i18n="ep.log2"><span class="dim">›</span> reconciliação on-chain ..... <span class="ok">done</span></p>
                 <p class="line out"><span class="dim">›</span> deploy → <span class="c-green">MAINNET</span> ........... <span class="ok">✓ live</span></p>
               </div>
 
-              <p class="product__p product__p--muted">
+              <p class="product__p product__p--muted" data-i18n="ep.pmuted">
                 Sob o capô há o núcleo de clearing e auditoria do EnergyPay,
                 <strong>ainda em stealth (não lançado)</strong>, desenhado para casar a
                 confiabilidade que o setor elétrico exige com a velocidade de trilhos
@@ -240,8 +256,8 @@
               </p>
 
               <div class="product__links">
-                <a class="btn btn--primary" href="https://energypay-protocol-mainnet.vercel.app" target="_blank" rel="noopener noreferrer">Ver o EnergyPay</a>
-                <a class="btn btn--ghost" href="https://github.com/beto-rocha-blockchain/energypay-protocol-mainnet" target="_blank" rel="noopener noreferrer">Repositório</a>
+                <a class="btn btn--primary" href="https://energypay-protocol-mainnet.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="btn.view">Ver o EnergyPay</a>
+                <a class="btn btn--ghost" href="https://github.com/beto-rocha-blockchain/energypay-protocol-mainnet" target="_blank" rel="noopener noreferrer" data-i18n="btn.repo">Repositório</a>
               </div>
             </div>
           </article>
@@ -254,7 +270,7 @@
               </span>
               <div>
                 <h4>Stellar Mainnet</h4>
-                <p>Rail financeiro verificável e de baixo custo — cada evento com txHash, ledger e memo auditáveis.</p>
+                <p data-i18n="feat.stellar">Rail financeiro verificável e de baixo custo — cada evento com txHash, ledger e memo auditáveis.</p>
               </div>
             </li>
             <li class="feature reveal">
@@ -263,7 +279,7 @@
               </span>
               <div>
                 <h4>Stablecoins</h4>
-                <p>Ativos de valor estável no ecossistema Stellar, como referência de valor.</p>
+                <p data-i18n="feat.stable">Ativos de valor estável no ecossistema Stellar, como referência de valor.</p>
               </div>
             </li>
             <li class="feature reveal">
@@ -272,7 +288,7 @@
               </span>
               <div>
                 <h4>x402 · M2M</h4>
-                <p>Pagamentos máquina-a-máquina nativos para automação de fluxos do setor.</p>
+                <p data-i18n="feat.x402">Pagamentos máquina-a-máquina nativos para automação de fluxos do setor.</p>
               </div>
             </li>
             <li class="feature reveal">
@@ -280,8 +296,8 @@
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
               <div>
-                <h4>Reconciliação &amp; auditoria</h4>
-                <p>Conciliação automática dos recebíveis com trilha de auditoria de ponta a ponta.</p>
+                <h4 data-i18n="feat.recon.h">Reconciliação &amp; auditoria</h4>
+                <p data-i18n="feat.recon.p">Conciliação automática dos recebíveis com trilha de auditoria de ponta a ponta.</p>
               </div>
             </li>
             <li class="feature reveal">
@@ -290,7 +306,7 @@
               </span>
               <div>
                 <h4>PIX, cartão &amp; XLM</h4>
-                <p>Pagamentos de assinatura da plataforma via ASAAS (PIX e cartão) e em XLM.</p>
+                <p data-i18n="feat.pay">Pagamentos de assinatura da plataforma via ASAAS (PIX e cartão) e em XLM.</p>
               </div>
             </li>
             <li class="feature reveal">
@@ -298,14 +314,14 @@
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
               </span>
               <div>
-                <h4>Mercado Livre (ACL)</h4>
-                <p>Foco em um mercado real e em expansão: o Ambiente de Contratação Livre brasileiro.</p>
+                <h4 data-i18n="feat.acl.h">Mercado Livre (ACL)</h4>
+                <p data-i18n="feat.acl.p">Foco em um mercado real e em expansão: o Ambiente de Contratação Livre brasileiro.</p>
               </div>
             </li>
           </ul>
         </div>
 
-        <p class="product__roadmap reveal">
+        <p class="product__roadmap reveal" data-i18n="ep.roadmap">
           <strong>No roadmap do EnergyPay:</strong> contratos on-chain em <strong>Soroban</strong>,
           provas <strong>Zero-Knowledge</strong> e <strong>Rust</strong> — tecnologias que já
           implementei em projetos anteriores (StellarGrid, EnerTradeZK).
@@ -317,9 +333,9 @@
     <section class="section section--alt" id="sobre" aria-labelledby="sobre-title">
       <div class="container about">
         <div class="about__intro reveal">
-          <span class="kicker">O fundador</span>
-          <h2 id="sobre-title" class="section__title">Da Marinha ao código por trás do mercado de energia</h2>
-          <p class="section__sub">
+          <span class="kicker" data-i18n="about.kicker">O fundador</span>
+          <h2 id="sobre-title" class="section__title" data-i18n="about.title">Da Marinha ao código por trás do mercado de energia</h2>
+          <p class="section__sub" data-i18n="about.sub">
             <strong>Roberto Pimentel</strong> (Beto Rocha) — engenheiro Fullstack, <strong>Web3 &amp; AI</strong>,
             em Petrópolis, Rio de Janeiro. Uma trajetória que vira vantagem: da Marinha ao ensino, e do
             <strong>setor elétrico no campo</strong> — eletricista predial, técnico instalador de energia solar
@@ -331,49 +347,49 @@
         <ol class="timeline" aria-label="Trajetória profissional">
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// 2007–2011 · disciplina</p>
-            <h3>Soldado Fuzileiro Naval — Marinha do Brasil</h3>
-            <p>Disciplina, atuação sob pressão e trabalho em equipe — a base para executar software de missão crítica.</p>
+            <p class="timeline__when mono" data-i18n="tl.1.when">// 2007–2011 · disciplina</p>
+            <h3 data-i18n="tl.1.h">Soldado Fuzileiro Naval — Marinha do Brasil</h3>
+            <p data-i18n="tl.1.p">Disciplina, atuação sob pressão e trabalho em equipe — a base para executar software de missão crítica.</p>
           </li>
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// energia · primeiro ofício</p>
-            <h3>Eletricista predial</h3>
-            <p>Instalações e manutenção elétrica predial — a porta de entrada no setor elétrico, antes da energia solar e da rede urbana.</p>
+            <p class="timeline__when mono" data-i18n="tl.2.when">// energia · primeiro ofício</p>
+            <h3 data-i18n="tl.2.h">Eletricista predial</h3>
+            <p data-i18n="tl.2.p">Instalações e manutenção elétrica predial — a porta de entrada no setor elétrico, antes da energia solar e da rede urbana.</p>
           </li>
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// energia · solar</p>
-            <h3>Técnico instalador de energia solar — Solar Grid</h3>
-            <p>Instalação e projetos de energia fotovoltaica (dimensionamento no Solergo) — do predial à geração renovável.</p>
+            <p class="timeline__when mono" data-i18n="tl.3.when">// energia · solar</p>
+            <h3 data-i18n="tl.3.h">Técnico instalador de energia solar — Solar Grid</h3>
+            <p data-i18n="tl.3.p">Instalação e projetos de energia fotovoltaica (dimensionamento no Solergo) — do predial à geração renovável.</p>
           </li>
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// 2018–2023 · ensino</p>
-            <h3>Professor (informática, matemática e física) — Index, Cebrac e outras escolas</h3>
-            <p>Anos lecionando em diversas escolas e cursos: informática, hardware, programação, robótica e web design, além de <strong>matemática e física</strong>. Passei pelo <strong>Index</strong> e, mais tarde, <strong>8 meses de informática no Cebrac</strong> pouco antes da Progen. Desenvolvi apps e games em JS/CSS. Ensinar afia a habilidade de simplificar o complexo.</p>
+            <p class="timeline__when mono" data-i18n="tl.4.when">// 2018–2023 · ensino</p>
+            <h3 data-i18n="tl.4.h">Professor (informática, matemática e física) — Index, Cebrac e outras escolas</h3>
+            <p data-i18n="tl.4.p">Anos lecionando em diversas escolas e cursos: informática, hardware, programação, robótica e web design, além de <strong>matemática e física</strong>. Passei pelo <strong>Index</strong> e, mais tarde, <strong>8 meses de informática no Cebrac</strong> pouco antes da Progen. Desenvolvi apps e games em JS/CSS. Ensinar afia a habilidade de simplificar o complexo.</p>
           </li>
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// 2023–2025 · campo + TI</p>
-            <h3>Eletricista de Emergência → Assistente de TI — Progen (Enel)</h3>
-            <p>1º ano: <strong>Eletricista de emergência de rede urbana BT/MT, certificado pela Enel</strong> (curso BT/MT/LM), atuando em campo em Petrópolis, Teresópolis e região serrana do RJ. 2º ano: <strong>Assistente de TI</strong> no contrato da Progen (terceirizada da Enel), responsável por <strong>~500 dispositivos</strong> de usuários. Do campo elétrico ao código.</p>
+            <p class="timeline__when mono" data-i18n="tl.5.when">// 2023–2025 · campo + TI</p>
+            <h3 data-i18n="tl.5.h">Eletricista de Emergência → Assistente de TI — Progen (Enel)</h3>
+            <p data-i18n="tl.5.p">1º ano: <strong>Eletricista de emergência de rede urbana BT/MT, certificado pela Enel</strong> (curso BT/MT/LM), atuando em campo em Petrópolis, Teresópolis e região serrana do RJ. 2º ano: <strong>Assistente de TI</strong> no contrato da Progen (terceirizada da Enel), responsável por <strong>~500 dispositivos</strong> de usuários. Do campo elétrico ao código.</p>
           </li>
           <li class="timeline__item reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// 2025–2026 · infraestrutura</p>
-            <h3>Analista de suporte de TI — CRAS Brasil</h3>
-            <p>Estruturação e manutenção de infraestrutura de TI: controle de acessos, gestão de inventário de <strong>~250 equipamentos e usuários</strong> e suporte técnico a todos os setores.</p>
+            <p class="timeline__when mono" data-i18n="tl.6.when">// 2025–2026 · infraestrutura</p>
+            <h3 data-i18n="tl.6.h">Analista de suporte de TI — CRAS Brasil</h3>
+            <p data-i18n="tl.6.p">Estruturação e manutenção de infraestrutura de TI: controle de acessos, gestão de inventário de <strong>~250 equipamentos e usuários</strong> e suporte técnico a todos os setores.</p>
           </li>
           <li class="timeline__item timeline__item--accent reveal">
             <span class="timeline__dot" aria-hidden="true"></span>
-            <p class="timeline__when mono">// 2026 · hoje</p>
-            <h3>Co-founder &amp; Tech Lead @ EnergyPay</h3>
-            <p>Fundador e líder técnico. Construindo, com meu sócio <strong>Eduardo Ferreira da Silva</strong>, a pré-camada de liquidação do mercado livre de energia (ACL) — registro e auditoria de recebíveis sobre a rede Stellar.</p>
+            <p class="timeline__when mono" data-i18n="tl.7.when">// 2026 · hoje</p>
+            <h3 data-i18n="tl.7.h">Co-founder &amp; Tech Lead @ EnergyPay</h3>
+            <p data-i18n="tl.7.p">Fundador e líder técnico. Construindo, com meu sócio <strong>Eduardo Ferreira da Silva</strong>, a pré-camada de liquidação do mercado livre de energia (ACL) — registro e auditoria de recebíveis sobre a rede Stellar.</p>
           </li>
         </ol>
 
-        <blockquote class="story-quote reveal">
+        <blockquote class="story-quote reveal" data-i18n="about.quote">
           <p>"O mercado de energia precisa de uma camada de confiança tão sólida quanto a própria rede elétrica."</p>
         </blockquote>
       </div>
@@ -383,9 +399,9 @@
     <section class="section" id="stack" aria-labelledby="stack-title">
       <div class="container">
         <div class="section__head reveal">
-          <span class="kicker">Expertise</span>
-          <h2 id="stack-title" class="section__title">Stack &amp; capacidades</h2>
-          <p class="section__sub">Do contrato inteligente à interface — full-stack atravessando a fronteira Web3 / energia.</p>
+          <span class="kicker" data-i18n="stack.kicker">Expertise</span>
+          <h2 id="stack-title" class="section__title" data-i18n="stack.title">Stack &amp; capacidades</h2>
+          <p class="section__sub" data-i18n="stack.sub">Do contrato inteligente à interface — full-stack atravessando a fronteira Web3 / energia.</p>
         </div>
 
         <div class="stack-groups">
@@ -403,7 +419,7 @@
             <div class="stack-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
             </div>
-            <h3>Linguagens</h3>
+            <h3 data-i18n="stack.langs">Linguagens</h3>
             <ul class="stack-card__list">
               <li>Rust</li><li>TypeScript</li><li>JavaScript</li><li>Solidity</li>
             </ul>
@@ -423,7 +439,7 @@
             <div class="stack-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
             </div>
-            <h3>Criptografia &amp; Privacidade</h3>
+            <h3 data-i18n="stack.crypto">Criptografia &amp; Privacidade</h3>
             <ul class="stack-card__list">
               <li>Zero-Knowledge</li><li>Stablecoins</li><li>x402 (m2m)</li><li>Settlement</li>
             </ul>
@@ -443,9 +459,9 @@
             <div class="stack-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.2A.9.9 0 0 0 5.2 14.6H10l-1 7.4 9.5-12.2a.9.9 0 0 0-.7-1.4H13l0-6.4Z"/></svg>
             </div>
-            <h3>Domínio: Energia</h3>
+            <h3 data-i18n="stack.domain">Domínio: Energia</h3>
             <ul class="stack-card__list">
-              <li>Mercado Livre (ACL)</li><li>Tokenização de kWh</li><li>Recebíveis</li><li>Campo / suporte</li>
+              <li data-i18n="stack.acl">Mercado Livre (ACL)</li><li data-i18n="stack.kwh">Tokenização de kWh</li><li data-i18n="stack.recv">Recebíveis</li><li data-i18n="stack.field">Campo / suporte</li>
             </ul>
           </article>
         </div>
@@ -456,9 +472,9 @@
     <section class="section section--alt" id="projetos" aria-labelledby="projetos-title">
       <div class="container">
         <div class="section__head reveal">
-          <span class="kicker">Em produção &amp; open source</span>
-          <h2 id="projetos-title" class="section__title">Projetos em destaque</h2>
-          <p class="section__sub">Tudo público e auditável no GitHub — energia, criptografia e os trilhos que conectam os dois.</p>
+          <span class="kicker" data-i18n="proj.kicker">Em produção &amp; open source</span>
+          <h2 id="projetos-title" class="section__title" data-i18n="proj.title">Projetos em destaque</h2>
+          <p class="section__sub" data-i18n="proj.sub">Tudo público e auditável no GitHub — energia, criptografia e os trilhos que conectam os dois.</p>
         </div>
 
         <div class="cards">
@@ -466,16 +482,16 @@
           <article class="card grad-border reveal">
             <div class="grad-border__inner card__inner">
               <div class="card__top">
-                <span class="card__tag card__tag--live">Em mainnet</span>
+                <span class="card__tag card__tag--live" data-i18n="proj.ep.tag">Em mainnet</span>
                 <span class="card__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M13 2 4.5 13.2A.9.9 0 0 0 5.2 14.6H10l-1 7.4 9.5-12.2a.9.9 0 0 0-.7-1.4H13l0-6.4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
                 </span>
               </div>
               <h3 class="card__title">EnergyPay</h3>
-              <p class="card__desc">Pré-camada de liquidação para o mercado livre de energia (ACL): contratos registrados e auditáveis na rede Stellar mainnet — em produção, com usuários e transações reais.</p>
+              <p class="card__desc" data-i18n="proj.ep.desc">Pré-camada de liquidação para o mercado livre de energia (ACL): contratos registrados e auditáveis na rede Stellar mainnet — em produção, com usuários e transações reais.</p>
               <div class="card__links">
                 <a href="https://energypay-protocol-mainnet.vercel.app" target="_blank" rel="noopener noreferrer">App ↗</a>
-                <a href="https://github.com/beto-rocha-blockchain/energypay-protocol-mainnet" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                <a href="https://github.com/beto-rocha-blockchain/energypay-protocol-mainnet" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
               </div>
             </div>
           </article>
@@ -490,9 +506,9 @@
                 </span>
               </div>
               <h3 class="card__title">EnerTradeZK</h3>
-              <p class="card__desc">Trading de energia tokenizada com provas de conhecimento zero: negocie com privacidade e verificabilidade.</p>
+              <p class="card__desc" data-i18n="proj.zk.desc">Trading de energia tokenizada com provas de conhecimento zero: negocie com privacidade e verificabilidade.</p>
               <div class="card__links">
-                <a href="https://github.com/beto-rocha-blockchain/EnerTradeZK" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                <a href="https://github.com/beto-rocha-blockchain/EnerTradeZK" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
               </div>
             </div>
           </article>
@@ -501,15 +517,15 @@
           <article class="card grad-border reveal">
             <div class="grad-border__inner card__inner">
               <div class="card__top">
-                <span class="card__tag">Tokenização</span>
+                <span class="card__tag" data-i18n="proj.grid.tag">Tokenização</span>
                 <span class="card__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 2l3 6 6 .8-4.5 4.3L18 20l-6-3.4L6 20l1.5-6.9L3 8.8 9 8l3-6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
                 </span>
               </div>
               <h3 class="card__title">StellarGrid</h3>
-              <p class="card__desc">Tokenização de energia renovável na Stellar/Soroban. Token STRGRID com lastro direto: 1 token = 1 kWh.</p>
+              <p class="card__desc" data-i18n="proj.grid.desc">Tokenização de energia renovável na Stellar/Soroban. Token STRGRID com lastro direto: 1 token = 1 kWh.</p>
               <div class="card__links">
-                <a href="https://github.com/beto-rocha-blockchain/StellarGrid" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                <a href="https://github.com/beto-rocha-blockchain/StellarGrid" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
               </div>
             </div>
           </article>
@@ -524,9 +540,9 @@
                 </span>
               </div>
               <h3 class="card__title">server-rust-1</h3>
-              <p class="card__desc">Servidor em Rust explorando ownership/borrowing e empacotamento com Docker — performance e segurança de memória.</p>
+              <p class="card__desc" data-i18n="proj.rust.desc">Servidor em Rust explorando ownership/borrowing e empacotamento com Docker — performance e segurança de memória.</p>
               <div class="card__links">
-                <a href="https://github.com/beto-rocha-blockchain/server-rust-1" target="_blank" rel="noopener noreferrer">Código ↗</a>
+                <a href="https://github.com/beto-rocha-blockchain/server-rust-1" target="_blank" rel="noopener noreferrer" data-i18n="proj.code">Código ↗</a>
               </div>
             </div>
           </article>
@@ -536,9 +552,9 @@
             <span class="card__icon card__icon--big" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
             </span>
-            <h3 class="card__title">Mais no GitHub</h3>
-            <p class="card__desc">Experimentos, protótipos e ferramentas open source.</p>
-            <span class="card--cta__link">Ver perfil completo ↗</span>
+            <h3 class="card__title" data-i18n="proj.more.h">Mais no GitHub</h3>
+            <p class="card__desc" data-i18n="proj.more.desc">Experimentos, protótipos e ferramentas open source.</p>
+            <span class="card--cta__link" data-i18n="proj.more.link">Ver perfil completo ↗</span>
           </a>
         </div>
       </div>
@@ -549,23 +565,23 @@
       <div class="container">
         <div class="cta-panel grad-border reveal">
           <div class="grad-border__inner cta-panel__inner">
-            <span class="kicker">Vamos conversar</span>
-            <h2 id="contato-title" class="cta-panel__title">
+            <span class="kicker" data-i18n="contact.kicker">Vamos conversar</span>
+            <h2 id="contato-title" class="cta-panel__title" data-i18n="contact.title">
               Construindo a camada de confiança do mercado de
               <span class="grad-text">energia</span>.
             </h2>
-            <p class="cta-panel__sub">
+            <p class="cta-panel__sub" data-i18n="contact.sub">
               Aberto a parcerias, investimento e a quem quer levar registro e auditoria de recebíveis
               para o setor elétrico. Fale comigo.
             </p>
             <div class="cta-panel__actions">
               <a class="btn btn--primary" href="mailto:roberto.blockchainresources@gmail.com">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Enviar e-mail
+                <span data-i18n="contact.email">Enviar e-mail</span>
               </a>
               <a class="btn btn--green" href="https://wa.me/5524992769936?text=Ol%C3%A1%20Roberto%21%20Vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20EnergyPay." target="_blank" rel="noopener noreferrer">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.53 0-3.03-.41-4.34-1.19l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.25-8.27 8.25Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
-                Falar no WhatsApp
+                <span data-i18n="contact.whats">Falar no WhatsApp</span>
               </a>
               <a class="btn btn--ghost" href="https://www.linkedin.com/in/robertoblockchainresources" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a class="btn btn--ghost" href="https://x.com/energy_pay_" target="_blank" rel="noopener noreferrer">X / Twitter</a>
@@ -578,12 +594,12 @@
               <input type="hidden" name="_next" value="https://beto-rocha-blockchain.github.io/beto-rocha-blockchain/?enviado=1" />
               <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <div class="contact-form__row">
-                <input class="contact-form__input" type="text" name="nome" placeholder="Seu nome" required />
-                <input class="contact-form__input" type="email" name="email" placeholder="Seu e-mail" required />
+                <input class="contact-form__input" type="text" name="nome" placeholder="Seu nome" data-i18n-ph="form.name" required />
+                <input class="contact-form__input" type="email" name="email" placeholder="Seu e-mail" data-i18n-ph="form.email" required />
               </div>
-              <input class="contact-form__input" type="text" name="empresa" placeholder="Empresa / assunto (opcional)" />
-              <textarea class="contact-form__input contact-form__textarea" name="mensagem" placeholder="Como posso ajudar?" required></textarea>
-              <button class="btn btn--green contact-form__submit" type="submit">Enviar cadastro</button>
+              <input class="contact-form__input" type="text" name="empresa" placeholder="Empresa / assunto (opcional)" data-i18n-ph="form.company" />
+              <textarea class="contact-form__input contact-form__textarea" name="mensagem" placeholder="Como posso ajudar?" data-i18n-ph="form.msg" required></textarea>
+              <button class="btn btn--green contact-form__submit" type="submit" data-i18n="form.submit">Enviar cadastro</button>
             </form>
           </div>
         </div>
@@ -596,8 +612,8 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <span class="brand__name">Energy<span class="brand__accent">Pay</span></span>
-        <p class="footer__tag">Pré-camada de liquidação para o mercado de energia.</p>
-        <p class="footer__loc">Roberto Pimentel · Beto Rocha · Petrópolis · Rio de Janeiro · Brasil</p>
+        <p class="footer__tag" data-i18n="footer.tag">Pré-camada de liquidação para o mercado de energia.</p>
+        <p class="footer__loc" data-i18n="footer.loc">Roberto Pimentel · Beto Rocha · Petrópolis · Rio de Janeiro · Brasil</p>
       </div>
 
       <nav class="footer__social" aria-label="Redes sociais">
@@ -619,11 +635,258 @@
       </nav>
     </div>
     <div class="container footer__bottom">
-      <p>© 2026 Roberto Pimentel (Beto Rocha). Todos os direitos reservados.</p>
+      <p data-i18n="footer.copy">© 2026 Roberto Pimentel (Beto Rocha). Todos os direitos reservados.</p>
       <img class="footer__counter" src="https://hits.sh/beto-rocha-blockchain.github.io.svg?style=for-the-badge&label=VISITAS&color=22d3ee&labelColor=0d1117" alt="Contador de visitas" loading="lazy" />
-      <a class="footer__top" href="#topo">Voltar ao topo ↑</a>
+      <a class="footer__top" href="#topo" data-i18n="footer.top">Voltar ao topo ↑</a>
     </div>
   </footer>
+
+  <!-- ===================== i18n (PT / EN / ES) ===================== -->
+  <script>
+    (function () {
+      var I18N = {
+        pt: {
+          "html.lang": "pt-br", "og.locale": "pt_BR",
+          "meta.title": "Roberto Pimentel · Co-founder @ EnergyPay — Pré-camada de liquidação para energia",
+          "meta.desc": "Roberto Pimentel (Beto Rocha) — Co-founder da EnergyPay, a pré-camada de liquidação do mercado livre de energia: registro, controle e auditoria de recebíveis com rastro verificável na rede Stellar. Engenheiro Fullstack, Web3 & AI. Protocolo em mainnet.",
+          "og.title": "Roberto Pimentel — Co-founder @ EnergyPay",
+          "og.desc": "Pré-camada de liquidação do mercado livre de energia: registro, controle e auditoria de recebíveis, com rastro verificável na rede Stellar. Protocolo em mainnet.",
+          "nav.skip": "Pular para o conteúdo",
+          "nav.product": "Produto", "nav.founder": "Fundador", "nav.stack": "Stack", "nav.projects": "Projetos", "nav.contact": "Contato",
+          "hero.eyebrow": "Protocolo no ar &middot; <strong>deploy em mainnet</strong>",
+          "hero.title": "A pré-camada de <span class=\"grad-text\">liquidação</span> do mercado de energia.",
+          "hero.lead": "<strong>EnergyPay</strong> é a pré-camada de liquidação do mercado livre de energia (ACL): registra contratos para controle e auditoria dos recebíveis, com rastro verificável na rede Stellar. Construído na interseção entre engenharia de software, criptografia e o mercado de energia.",
+          "btn.view": "Ver o EnergyPay", "btn.repo": "Repositório",
+          "stat.status.k": "Status", "stat.status.v": "Em mainnet", "stat.recv.k": "Recebíveis", "stat.recv.v": "Auditáveis", "stat.base.k": "Base",
+          "float.x402": "pagamentos máquina-a-máquina", "float.zk": "privado &amp; verificável", "float.rust": "memória segura &amp; veloz", "float.wasm": "portátil &amp; determinística",
+          "metric.deploy": "deploy de produção", "metric.stackv": "Web3 + Energia", "metric.recvk": "recebíveis", "metric.recvv": "auditáveis", "metric.recvd": "rastro on-chain", "metric.mktk": "mercado", "metric.mktd": "mercado livre de energia",
+          "marquee.acl": "Mercado Livre de Energia",
+          "ep.kicker": "O produto",
+          "ep.sub": "Pré-camada de liquidação para o setor elétrico: registro, controle e auditoria de recebíveis. Programável, auditável e pronta para a expansão do mercado livre — que a Lei 15.269/2025 leva de ~85 mil para mais de 20 milhões de unidades consumidoras.",
+          "ep.badge": "Marco recente · em mainnet com usuários e transações reais",
+          "ep.h": "Registro e auditoria de recebíveis, on-chain",
+          "ep.p": "O EnergyPay é a <strong>pré-camada de liquidação</strong> do Ambiente de Contratação Livre (ACL): os contratos são registrados na plataforma para <strong>controle e auditoria dos recebíveis</strong>, com rastro verificável de ponta a ponta na rede Stellar — reduzindo risco de contraparte e a dependência de conciliações manuais. Já em operação real: usuários na mainnet, assinaturas via PIX, cartão e XLM, e um <strong>SCF Instaward</strong> do Stellar Community Fund.",
+          "ep.log1": "<span class=\"dim\">›</span> registrar recebíveis ....... <span class=\"ok\">done</span>",
+          "ep.log2": "<span class=\"dim\">›</span> reconciliação on-chain ..... <span class=\"ok\">done</span>",
+          "ep.pmuted": "Sob o capô há o núcleo de clearing e auditoria do EnergyPay, <strong>ainda em stealth (não lançado)</strong>, desenhado para casar a confiabilidade que o setor elétrico exige com a velocidade de trilhos nativos de internet.",
+          "feat.stellar": "Rail financeiro verificável e de baixo custo — cada evento com txHash, ledger e memo auditáveis.",
+          "feat.stable": "Ativos de valor estável no ecossistema Stellar, como referência de valor.",
+          "feat.x402": "Pagamentos máquina-a-máquina nativos para automação de fluxos do setor.",
+          "feat.recon.h": "Reconciliação &amp; auditoria", "feat.recon.p": "Conciliação automática dos recebíveis com trilha de auditoria de ponta a ponta.",
+          "feat.pay": "Pagamentos de assinatura da plataforma via ASAAS (PIX e cartão) e em XLM.",
+          "feat.acl.h": "Mercado Livre (ACL)", "feat.acl.p": "Foco em um mercado real e em expansão: o Ambiente de Contratação Livre brasileiro.",
+          "ep.roadmap": "<strong>No roadmap do EnergyPay:</strong> contratos on-chain em <strong>Soroban</strong>, provas <strong>Zero-Knowledge</strong> e <strong>Rust</strong> — tecnologias que já implementei em projetos anteriores (StellarGrid, EnerTradeZK).",
+          "about.kicker": "O fundador",
+          "about.title": "Da Marinha ao código por trás do mercado de energia",
+          "about.sub": "<strong>Roberto Pimentel</strong> (Beto Rocha) — engenheiro Fullstack, <strong>Web3 &amp; AI</strong>, em Petrópolis, Rio de Janeiro. Uma trajetória que vira vantagem: da Marinha ao ensino, e do <strong>setor elétrico no campo</strong> — eletricista predial, técnico instalador de energia solar e eletricista de rede urbana certificado pela Enel —ao registro e à auditoria on-chain. Cursou Licenciatura em Física no Cefet/RJ (até o 5º período).",
+          "tl.1.when": "// 2007–2011 · disciplina", "tl.1.h": "Soldado Fuzileiro Naval — Marinha do Brasil", "tl.1.p": "Disciplina, atuação sob pressão e trabalho em equipe — a base para executar software de missão crítica.",
+          "tl.2.when": "// energia · primeiro ofício", "tl.2.h": "Eletricista predial", "tl.2.p": "Instalações e manutenção elétrica predial — a porta de entrada no setor elétrico, antes da energia solar e da rede urbana.",
+          "tl.3.when": "// energia · solar", "tl.3.h": "Técnico instalador de energia solar — Solar Grid", "tl.3.p": "Instalação e projetos de energia fotovoltaica (dimensionamento no Solergo) — do predial à geração renovável.",
+          "tl.4.when": "// 2018–2023 · ensino", "tl.4.h": "Professor (informática, matemática e física) — Index, Cebrac e outras escolas", "tl.4.p": "Anos lecionando em diversas escolas e cursos: informática, hardware, programação, robótica e web design, além de <strong>matemática e física</strong>. Passei pelo <strong>Index</strong> e, mais tarde, <strong>8 meses de informática no Cebrac</strong> pouco antes da Progen. Desenvolvi apps e games em JS/CSS. Ensinar afia a habilidade de simplificar o complexo.",
+          "tl.5.when": "// 2023–2025 · campo + TI", "tl.5.h": "Eletricista de Emergência → Assistente de TI — Progen (Enel)", "tl.5.p": "1º ano: <strong>Eletricista de emergência de rede urbana BT/MT, certificado pela Enel</strong> (curso BT/MT/LM), atuando em campo em Petrópolis, Teresópolis e região serrana do RJ. 2º ano: <strong>Assistente de TI</strong> no contrato da Progen (terceirizada da Enel), responsável por <strong>~500 dispositivos</strong> de usuários. Do campo elétrico ao código.",
+          "tl.6.when": "// 2025–2026 · infraestrutura", "tl.6.h": "Analista de suporte de TI — CRAS Brasil", "tl.6.p": "Estruturação e manutenção de infraestrutura de TI: controle de acessos, gestão de inventário de <strong>~250 equipamentos e usuários</strong> e suporte técnico a todos os setores.",
+          "tl.7.when": "// 2026 · hoje", "tl.7.h": "Co-founder &amp; Tech Lead @ EnergyPay", "tl.7.p": "Fundador e líder técnico. Construindo, com meu sócio <strong>Eduardo Ferreira da Silva</strong>, a pré-camada de liquidação do mercado livre de energia (ACL) — registro e auditoria de recebíveis sobre a rede Stellar.",
+          "about.quote": "<p>\"O mercado de energia precisa de uma camada de confiança tão sólida quanto a própria rede elétrica.\"</p>",
+          "stack.kicker": "Expertise", "stack.title": "Stack &amp; capacidades", "stack.sub": "Do contrato inteligente à interface — full-stack atravessando a fronteira Web3 / energia.",
+          "stack.langs": "Linguagens", "stack.crypto": "Criptografia &amp; Privacidade", "stack.domain": "Domínio: Energia",
+          "stack.acl": "Mercado Livre (ACL)", "stack.kwh": "Tokenização de kWh", "stack.recv": "Recebíveis", "stack.field": "Campo / suporte",
+          "proj.kicker": "Em produção &amp; open source", "proj.title": "Projetos em destaque", "proj.sub": "Tudo público e auditável no GitHub — energia, criptografia e os trilhos que conectam os dois.",
+          "proj.code": "Código ↗",
+          "proj.ep.tag": "Em mainnet", "proj.ep.desc": "Pré-camada de liquidação para o mercado livre de energia (ACL): contratos registrados e auditáveis na rede Stellar mainnet — em produção, com usuários e transações reais.",
+          "proj.zk.desc": "Trading de energia tokenizada com provas de conhecimento zero: negocie com privacidade e verificabilidade.",
+          "proj.grid.tag": "Tokenização", "proj.grid.desc": "Tokenização de energia renovável na Stellar/Soroban. Token STRGRID com lastro direto: 1 token = 1 kWh.",
+          "proj.rust.desc": "Servidor em Rust explorando ownership/borrowing e empacotamento com Docker — performance e segurança de memória.",
+          "proj.more.h": "Mais no GitHub", "proj.more.desc": "Experimentos, protótipos e ferramentas open source.", "proj.more.link": "Ver perfil completo ↗",
+          "contact.kicker": "Vamos conversar",
+          "contact.title": "Construindo a camada de confiança do mercado de <span class=\"grad-text\">energia</span>.",
+          "contact.sub": "Aberto a parcerias, investimento e a quem quer levar registro e auditoria de recebíveis para o setor elétrico. Fale comigo.",
+          "contact.email": "Enviar e-mail", "contact.whats": "Falar no WhatsApp",
+          "form.name": "Seu nome", "form.email": "Seu e-mail", "form.company": "Empresa / assunto (opcional)", "form.msg": "Como posso ajudar?", "form.submit": "Enviar cadastro",
+          "footer.tag": "Pré-camada de liquidação para o mercado de energia.",
+          "footer.loc": "Roberto Pimentel · Beto Rocha · Petrópolis · Rio de Janeiro · Brasil",
+          "footer.copy": "© 2026 Roberto Pimentel (Beto Rocha). Todos os direitos reservados.",
+          "footer.top": "Voltar ao topo ↑"
+        },
+        en: {
+          "html.lang": "en", "og.locale": "en_US",
+          "meta.title": "Roberto Pimentel · Co-founder @ EnergyPay — Settlement pre-layer for energy",
+          "meta.desc": "Roberto Pimentel (Beto Rocha) — Co-founder of EnergyPay, the settlement pre-layer for the free energy market: registration, control and audit of receivables with a verifiable trail on the Stellar network. Fullstack, Web3 & AI engineer. Protocol live on mainnet.",
+          "og.title": "Roberto Pimentel — Co-founder @ EnergyPay",
+          "og.desc": "Settlement pre-layer for the free energy market: registration, control and audit of receivables, with a verifiable trail on the Stellar network. Protocol live on mainnet.",
+          "nav.skip": "Skip to content",
+          "nav.product": "Product", "nav.founder": "Founder", "nav.stack": "Stack", "nav.projects": "Projects", "nav.contact": "Contact",
+          "hero.eyebrow": "Protocol live &middot; <strong>deployed on mainnet</strong>",
+          "hero.title": "The <span class=\"grad-text\">settlement</span> pre-layer for the energy market.",
+          "hero.lead": "<strong>EnergyPay</strong> is the settlement pre-layer for the free energy market (Brazil's ACL): it registers contracts for the control and audit of receivables, with a verifiable trail on the Stellar network. Built at the intersection of software engineering, cryptography and the energy market.",
+          "btn.view": "View EnergyPay", "btn.repo": "Repository",
+          "stat.status.k": "Status", "stat.status.v": "On mainnet", "stat.recv.k": "Receivables", "stat.recv.v": "Auditable", "stat.base.k": "Base",
+          "float.x402": "machine-to-machine payments", "float.zk": "private &amp; verifiable", "float.rust": "memory-safe &amp; fast", "float.wasm": "portable &amp; deterministic",
+          "metric.deploy": "production deploy", "metric.stackv": "Web3 + Energy", "metric.recvk": "receivables", "metric.recvv": "auditable", "metric.recvd": "on-chain trail", "metric.mktk": "market", "metric.mktd": "free energy market",
+          "marquee.acl": "Free Energy Market",
+          "ep.kicker": "The product",
+          "ep.sub": "Settlement pre-layer for the power sector: registration, control and audit of receivables. Programmable, auditable and ready for the free-market expansion — which Brazil's Law 15.269/2025 grows from ~85 thousand to more than 20 million consumer units.",
+          "ep.badge": "Recent milestone · on mainnet with real users and transactions",
+          "ep.h": "On-chain registration and audit of receivables",
+          "ep.p": "EnergyPay is the <strong>settlement pre-layer</strong> for the Free Contracting Environment (Brazil's ACL): contracts are registered on the platform for the <strong>control and audit of receivables</strong>, with an end-to-end verifiable trail on the Stellar network — reducing counterparty risk and the reliance on manual reconciliations. Already in real operation: users on mainnet, subscriptions via PIX, card and XLM, and an <strong>SCF Instaward</strong> from the Stellar Community Fund.",
+          "ep.log1": "<span class=\"dim\">›</span> register receivables ...... <span class=\"ok\">done</span>",
+          "ep.log2": "<span class=\"dim\">›</span> on-chain reconciliation ..... <span class=\"ok\">done</span>",
+          "ep.pmuted": "Under the hood is EnergyPay's clearing and audit core, <strong>still in stealth (not launched)</strong>, designed to marry the reliability the power sector demands with the speed of internet-native rails.",
+          "feat.stellar": "Verifiable, low-cost financial rail — every event with an auditable txHash, ledger and memo.",
+          "feat.stable": "Stable-value assets in the Stellar ecosystem, used as a value reference.",
+          "feat.x402": "Native machine-to-machine payments for automating sector workflows.",
+          "feat.recon.h": "Reconciliation &amp; audit", "feat.recon.p": "Automatic reconciliation of receivables with an end-to-end audit trail.",
+          "feat.pay": "Platform subscription payments via ASAAS (PIX and card) and in XLM.",
+          "feat.acl.h": "Free Market (ACL)", "feat.acl.p": "Focused on a real, expanding market: Brazil's Free Contracting Environment.",
+          "ep.roadmap": "<strong>On the EnergyPay roadmap:</strong> on-chain contracts in <strong>Soroban</strong>, <strong>Zero-Knowledge</strong> proofs and <strong>Rust</strong> — technologies I have already implemented in previous projects (StellarGrid, EnerTradeZK).",
+          "about.kicker": "The founder",
+          "about.title": "From the Navy to the code behind the energy market",
+          "about.sub": "<strong>Roberto Pimentel</strong> (Beto Rocha) — Fullstack, <strong>Web3 &amp; AI</strong> engineer, in Petrópolis, Rio de Janeiro. A path that becomes an edge: from the Navy to teaching, and from the <strong>power sector in the field</strong> — building electrician, solar-energy installer, and Enel-certified urban-grid electrician — to on-chain registration and audit. Studied a Physics teaching degree at Cefet/RJ (through the 5th semester).",
+          "tl.1.when": "// 2007–2011 · discipline", "tl.1.h": "Marine (Naval Fusilier) — Brazilian Navy", "tl.1.p": "Discipline, performing under pressure and teamwork — the foundation for running mission-critical software.",
+          "tl.2.when": "// energy · first trade", "tl.2.h": "Building electrician", "tl.2.p": "Building electrical installation and maintenance — the entry point into the power sector, before solar energy and the urban grid.",
+          "tl.3.when": "// energy · solar", "tl.3.h": "Solar-energy installer — Solar Grid", "tl.3.p": "Installation and design of photovoltaic energy (sizing in Solergo) — from buildings to renewable generation.",
+          "tl.4.when": "// 2018–2023 · teaching", "tl.4.h": "Teacher (IT, math and physics) — Index, Cebrac and other schools", "tl.4.p": "Years teaching at various schools and courses: IT, hardware, programming, robotics and web design, plus <strong>math and physics</strong>. I went through <strong>Index</strong> and, later, <strong>8 months of IT at Cebrac</strong> shortly before Progen. I built apps and games in JS/CSS. Teaching sharpens the skill of simplifying the complex.",
+          "tl.5.when": "// 2023–2025 · field + IT", "tl.5.h": "Emergency Electrician → IT Assistant — Progen (Enel)", "tl.5.p": "Year 1: <strong>Enel-certified LV/MV emergency urban-grid electrician</strong> (LV/MV/live-line course), working in the field in Petrópolis, Teresópolis and the RJ highlands. Year 2: <strong>IT Assistant</strong> on the Progen contract (an Enel subcontractor), responsible for <strong>~500 user devices</strong>. From the electrical field to the code.",
+          "tl.6.when": "// 2025–2026 · infrastructure", "tl.6.h": "IT Support Analyst — CRAS Brasil", "tl.6.p": "Structuring and maintaining IT infrastructure: access control, inventory management of <strong>~250 devices and users</strong> and technical support to every department.",
+          "tl.7.when": "// 2026 · today", "tl.7.h": "Co-founder &amp; Tech Lead @ EnergyPay", "tl.7.p": "Founder and technical lead. Building, with my partner <strong>Eduardo Ferreira da Silva</strong>, the settlement pre-layer for the free energy market (ACL) — registration and audit of receivables on the Stellar network.",
+          "about.quote": "<p>\"The energy market needs a trust layer as solid as the electrical grid itself.\"</p>",
+          "stack.kicker": "Expertise", "stack.title": "Stack &amp; capabilities", "stack.sub": "From smart contract to interface — full-stack across the Web3 / energy frontier.",
+          "stack.langs": "Languages", "stack.crypto": "Cryptography &amp; Privacy", "stack.domain": "Domain: Energy",
+          "stack.acl": "Free Market (ACL)", "stack.kwh": "kWh tokenization", "stack.recv": "Receivables", "stack.field": "Field / support",
+          "proj.kicker": "In production &amp; open source", "proj.title": "Featured projects", "proj.sub": "All public and auditable on GitHub — energy, cryptography and the rails that connect the two.",
+          "proj.code": "Code ↗",
+          "proj.ep.tag": "On mainnet", "proj.ep.desc": "Settlement pre-layer for the free energy market (ACL): contracts registered and auditable on the Stellar mainnet — in production, with real users and transactions.",
+          "proj.zk.desc": "Tokenized energy trading with zero-knowledge proofs: trade with privacy and verifiability.",
+          "proj.grid.tag": "Tokenization", "proj.grid.desc": "Renewable-energy tokenization on Stellar/Soroban. STRGRID token with direct backing: 1 token = 1 kWh.",
+          "proj.rust.desc": "A Rust server exploring ownership/borrowing and Docker packaging — performance and memory safety.",
+          "proj.more.h": "More on GitHub", "proj.more.desc": "Experiments, prototypes and open-source tools.", "proj.more.link": "View full profile ↗",
+          "contact.kicker": "Let's talk",
+          "contact.title": "Building the trust layer of the <span class=\"grad-text\">energy</span> market.",
+          "contact.sub": "Open to partnerships, investment and anyone who wants to bring registration and audit of receivables to the power sector. Get in touch.",
+          "contact.email": "Send email", "contact.whats": "Chat on WhatsApp",
+          "form.name": "Your name", "form.email": "Your email", "form.company": "Company / subject (optional)", "form.msg": "How can I help?", "form.submit": "Send message",
+          "footer.tag": "Settlement pre-layer for the energy market.",
+          "footer.loc": "Roberto Pimentel · Beto Rocha · Petrópolis · Rio de Janeiro · Brazil",
+          "footer.copy": "© 2026 Roberto Pimentel (Beto Rocha). All rights reserved.",
+          "footer.top": "Back to top ↑"
+        },
+        es: {
+          "html.lang": "es", "og.locale": "es_ES",
+          "meta.title": "Roberto Pimentel · Co-founder @ EnergyPay — Precapa de liquidación para energía",
+          "meta.desc": "Roberto Pimentel (Beto Rocha) — Co-founder de EnergyPay, la precapa de liquidación del mercado libre de energía: registro, control y auditoría de cuentas por cobrar con traza verificable en la red Stellar. Ingeniero Fullstack, Web3 & AI. Protocolo en mainnet.",
+          "og.title": "Roberto Pimentel — Co-founder @ EnergyPay",
+          "og.desc": "Precapa de liquidación del mercado libre de energía: registro, control y auditoría de cuentas por cobrar, con traza verificable en la red Stellar. Protocolo en mainnet.",
+          "nav.skip": "Saltar al contenido",
+          "nav.product": "Producto", "nav.founder": "Fundador", "nav.stack": "Stack", "nav.projects": "Proyectos", "nav.contact": "Contacto",
+          "hero.eyebrow": "Protocolo en producción &middot; <strong>desplegado en mainnet</strong>",
+          "hero.title": "La precapa de <span class=\"grad-text\">liquidación</span> del mercado de energía.",
+          "hero.lead": "<strong>EnergyPay</strong> es la precapa de liquidación del mercado libre de energía (el ACL de Brasil): registra contratos para el control y la auditoría de las cuentas por cobrar, con una traza verificable en la red Stellar. Construido en la intersección entre ingeniería de software, criptografía y el mercado de energía.",
+          "btn.view": "Ver EnergyPay", "btn.repo": "Repositorio",
+          "stat.status.k": "Estado", "stat.status.v": "En mainnet", "stat.recv.k": "Por cobrar", "stat.recv.v": "Auditables", "stat.base.k": "Base",
+          "float.x402": "pagos máquina a máquina", "float.zk": "privado y verificable", "float.rust": "memoria segura y rápida", "float.wasm": "portable y determinista",
+          "metric.deploy": "despliegue de producción", "metric.stackv": "Web3 + Energía", "metric.recvk": "por cobrar", "metric.recvv": "auditables", "metric.recvd": "traza on-chain", "metric.mktk": "mercado", "metric.mktd": "mercado libre de energía",
+          "marquee.acl": "Mercado Libre de Energía",
+          "ep.kicker": "El producto",
+          "ep.sub": "Precapa de liquidación para el sector eléctrico: registro, control y auditoría de cuentas por cobrar. Programable, auditable y lista para la expansión del mercado libre — que la Ley 15.269/2025 de Brasil lleva de ~85 mil a más de 20 millones de unidades consumidoras.",
+          "ep.badge": "Hito reciente · en mainnet con usuarios y transacciones reales",
+          "ep.h": "Registro y auditoría de cuentas por cobrar, on-chain",
+          "ep.p": "EnergyPay es la <strong>precapa de liquidación</strong> del Entorno de Contratación Libre (el ACL de Brasil): los contratos se registran en la plataforma para el <strong>control y la auditoría de las cuentas por cobrar</strong>, con una traza verificable de extremo a extremo en la red Stellar — reduciendo el riesgo de contraparte y la dependencia de conciliaciones manuales. Ya en operación real: usuarios en mainnet, suscripciones vía PIX, tarjeta y XLM, y un <strong>SCF Instaward</strong> del Stellar Community Fund.",
+          "ep.log1": "<span class=\"dim\">›</span> registrar por cobrar ....... <span class=\"ok\">done</span>",
+          "ep.log2": "<span class=\"dim\">›</span> reconciliación on-chain ..... <span class=\"ok\">done</span>",
+          "ep.pmuted": "Bajo el capó está el núcleo de clearing y auditoría de EnergyPay, <strong>aún en stealth (no lanzado)</strong>, diseñado para unir la fiabilidad que exige el sector eléctrico con la velocidad de rieles nativos de internet.",
+          "feat.stellar": "Riel financiero verificable y de bajo costo — cada evento con txHash, ledger y memo auditables.",
+          "feat.stable": "Activos de valor estable en el ecosistema Stellar, como referencia de valor.",
+          "feat.x402": "Pagos máquina a máquina nativos para automatizar los flujos del sector.",
+          "feat.recon.h": "Reconciliación y auditoría", "feat.recon.p": "Conciliación automática de las cuentas por cobrar con traza de auditoría de extremo a extremo.",
+          "feat.pay": "Pagos de suscripción de la plataforma vía ASAAS (PIX y tarjeta) y en XLM.",
+          "feat.acl.h": "Mercado Libre (ACL)", "feat.acl.p": "Enfocado en un mercado real y en expansión: el Entorno de Contratación Libre de Brasil.",
+          "ep.roadmap": "<strong>En el roadmap de EnergyPay:</strong> contratos on-chain en <strong>Soroban</strong>, pruebas <strong>Zero-Knowledge</strong> y <strong>Rust</strong> — tecnologías que ya implementé en proyectos anteriores (StellarGrid, EnerTradeZK).",
+          "about.kicker": "El fundador",
+          "about.title": "De la Marina al código detrás del mercado de energía",
+          "about.sub": "<strong>Roberto Pimentel</strong> (Beto Rocha) — ingeniero Fullstack, <strong>Web3 &amp; AI</strong>, en Petrópolis, Río de Janeiro. Una trayectoria que se vuelve ventaja: de la Marina a la docencia, y del <strong>sector eléctrico en campo</strong> — electricista de edificaciones, instalador de energía solar y electricista de red urbana certificado por Enel — al registro y la auditoría on-chain. Cursó el Profesorado en Física en el Cefet/RJ (hasta el 5.º período).",
+          "tl.1.when": "// 2007–2011 · disciplina", "tl.1.h": "Infante de Marina — Marina de Brasil", "tl.1.p": "Disciplina, actuación bajo presión y trabajo en equipo — la base para ejecutar software de misión crítica.",
+          "tl.2.when": "// energía · primer oficio", "tl.2.h": "Electricista de edificaciones", "tl.2.p": "Instalaciones y mantenimiento eléctrico de edificaciones — la puerta de entrada al sector eléctrico, antes de la energía solar y la red urbana.",
+          "tl.3.when": "// energía · solar", "tl.3.h": "Instalador de energía solar — Solar Grid", "tl.3.p": "Instalación y proyectos de energía fotovoltaica (dimensionamiento en Solergo) — de las edificaciones a la generación renovable.",
+          "tl.4.when": "// 2018–2023 · docencia", "tl.4.h": "Profesor (informática, matemáticas y física) — Index, Cebrac y otras escuelas", "tl.4.p": "Años enseñando en diversas escuelas y cursos: informática, hardware, programación, robótica y diseño web, además de <strong>matemáticas y física</strong>. Pasé por <strong>Index</strong> y, más tarde, <strong>8 meses de informática en Cebrac</strong> poco antes de Progen. Desarrollé apps y juegos en JS/CSS. Enseñar afila la habilidad de simplificar lo complejo.",
+          "tl.5.when": "// 2023–2025 · campo + TI", "tl.5.h": "Electricista de Emergencia → Asistente de TI — Progen (Enel)", "tl.5.p": "1.er año: <strong>Electricista de emergencia de red urbana BT/MT, certificado por Enel</strong> (curso BT/MT/línea viva), trabajando en campo en Petrópolis, Teresópolis y la región serrana de RJ. 2.º año: <strong>Asistente de TI</strong> en el contrato de Progen (subcontratista de Enel), responsable de <strong>~500 dispositivos</strong> de usuarios. Del campo eléctrico al código.",
+          "tl.6.when": "// 2025–2026 · infraestructura", "tl.6.h": "Analista de soporte de TI — CRAS Brasil", "tl.6.p": "Estructuración y mantenimiento de infraestructura de TI: control de accesos, gestión de inventario de <strong>~250 equipos y usuarios</strong> y soporte técnico a todos los sectores.",
+          "tl.7.when": "// 2026 · hoy", "tl.7.h": "Co-founder y Tech Lead @ EnergyPay", "tl.7.p": "Fundador y líder técnico. Construyendo, con mi socio <strong>Eduardo Ferreira da Silva</strong>, la precapa de liquidación del mercado libre de energía (ACL) — registro y auditoría de cuentas por cobrar sobre la red Stellar.",
+          "about.quote": "<p>\"El mercado de energía necesita una capa de confianza tan sólida como la propia red eléctrica.\"</p>",
+          "stack.kicker": "Experiencia", "stack.title": "Stack y capacidades", "stack.sub": "Del contrato inteligente a la interfaz — full-stack cruzando la frontera Web3 / energía.",
+          "stack.langs": "Lenguajes", "stack.crypto": "Criptografía y Privacidad", "stack.domain": "Dominio: Energía",
+          "stack.acl": "Mercado Libre (ACL)", "stack.kwh": "Tokenización de kWh", "stack.recv": "Por cobrar", "stack.field": "Campo / soporte",
+          "proj.kicker": "En producción y open source", "proj.title": "Proyectos destacados", "proj.sub": "Todo público y auditable en GitHub — energía, criptografía y los rieles que conectan a ambos.",
+          "proj.code": "Código ↗",
+          "proj.ep.tag": "En mainnet", "proj.ep.desc": "Precapa de liquidación para el mercado libre de energía (ACL): contratos registrados y auditables en la red Stellar mainnet — en producción, con usuarios y transacciones reales.",
+          "proj.zk.desc": "Trading de energía tokenizada con pruebas de conocimiento cero: negocia con privacidad y verificabilidad.",
+          "proj.grid.tag": "Tokenización", "proj.grid.desc": "Tokenización de energía renovable en Stellar/Soroban. Token STRGRID con respaldo directo: 1 token = 1 kWh.",
+          "proj.rust.desc": "Servidor en Rust explorando ownership/borrowing y empaquetado con Docker — rendimiento y seguridad de memoria.",
+          "proj.more.h": "Más en GitHub", "proj.more.desc": "Experimentos, prototipos y herramientas open source.", "proj.more.link": "Ver perfil completo ↗",
+          "contact.kicker": "Hablemos",
+          "contact.title": "Construyendo la capa de confianza del mercado de <span class=\"grad-text\">energía</span>.",
+          "contact.sub": "Abierto a alianzas, inversión y a quien quiera llevar el registro y la auditoría de cuentas por cobrar al sector eléctrico. Escríbeme.",
+          "contact.email": "Enviar correo", "contact.whats": "Hablar por WhatsApp",
+          "form.name": "Tu nombre", "form.email": "Tu correo", "form.company": "Empresa / asunto (opcional)", "form.msg": "¿Cómo puedo ayudar?", "form.submit": "Enviar mensaje",
+          "footer.tag": "Precapa de liquidación para el mercado de energía.",
+          "footer.loc": "Roberto Pimentel · Beto Rocha · Petrópolis · Río de Janeiro · Brasil",
+          "footer.copy": "© 2026 Roberto Pimentel (Beto Rocha). Todos los derechos reservados.",
+          "footer.top": "Volver arriba ↑"
+        }
+      };
+
+      var SUPPORTED = ["pt", "en", "es"];
+      var STORAGE_KEY = "ep_lang";
+
+      function pickInitial() {
+        try {
+          var saved = localStorage.getItem(STORAGE_KEY);
+          if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
+        } catch (e) {}
+        var langs = navigator.languages || [navigator.language || "pt"];
+        for (var i = 0; i < langs.length; i++) {
+          var code = String(langs[i] || "").slice(0, 2).toLowerCase();
+          if (SUPPORTED.indexOf(code) !== -1) return code;
+        }
+        return "pt";
+      }
+
+      function setMeta(prop, val, attr) {
+        var el = document.querySelector('meta[' + attr + '="' + prop + '"]');
+        if (el) el.setAttribute("content", val);
+      }
+
+      function apply(lang) {
+        var dict = I18N[lang] || I18N.pt;
+        // text (innerHTML) nodes
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var v = dict[el.getAttribute("data-i18n")];
+          if (v != null) el.innerHTML = v;
+        });
+        // placeholders
+        document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+          var v = dict[el.getAttribute("data-i18n-ph")];
+          if (v != null) el.setAttribute("placeholder", v);
+        });
+        // document-level
+        document.documentElement.setAttribute("lang", dict["html.lang"] || lang);
+        if (dict["meta.title"]) document.title = dict["meta.title"];
+        setMeta("description", dict["meta.desc"], "name");
+        setMeta("og:title", dict["og.title"], "property");
+        setMeta("og:description", dict["og.desc"], "property");
+        setMeta("og:locale", dict["og.locale"], "property");
+        // switcher state
+        document.querySelectorAll(".lang-switch button").forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+        });
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+      }
+
+      document.querySelectorAll(".lang-switch button").forEach(function (b) {
+        b.addEventListener("click", function () { apply(b.getAttribute("data-lang")); });
+      });
+
+      apply(pickInitial());
+    })();
+  </script>
 
   <!-- scroll-reveal (progressivo; sem JS o conteúdo aparece normalmente) -->
   <script>
