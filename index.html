@@ -32,11 +32,11 @@
     .lang-switch button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;}
     @media (max-width:460px){ .status-pill{display:none;} }
     /* social row under the portrait photo */
-    .portrait__social{display:flex;justify-content:center;gap:.6rem;margin-top:1.15rem;position:relative;z-index:3;}
-    .portrait__social a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:var(--muted);background:var(--panel);border:1px solid var(--border);transition:color .18s var(--ease),border-color .18s var(--ease),transform .18s var(--ease),background .18s var(--ease);}
-    .portrait__social a:hover{color:var(--cyan);border-color:var(--border-soft);background:var(--panel-2);transform:translateY(-2px);}
-    .portrait__social a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;}
-    .portrait__social svg{display:block;}
+    .portrait__social{display:flex;justify-content:center;gap:.8rem;margin-top:1.5rem;position:relative;z-index:3;}
+    .portrait__social a{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;color:var(--text);background:var(--panel-2);border:1px solid var(--border-soft);box-shadow:var(--shadow-soft);transition:color .18s var(--ease),border-color .18s var(--ease),transform .18s var(--ease),box-shadow .18s var(--ease);}
+    .portrait__social a:hover{color:var(--cyan);border-color:var(--cyan);transform:translateY(-3px);box-shadow:var(--shadow-glow);}
+    .portrait__social a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;}
+    .portrait__social svg{width:27px;height:27px;display:block;}
     @media (prefers-reduced-motion:reduce){ .lang-switch button,.portrait__social a{transition:none;} }
   </style>
 </head>
