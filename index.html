@@ -274,6 +274,90 @@
       </div>
     </section>
 
+    <!-- ===================== FICHA ===================== -->
+    <section class="section section--alt" id="ficha" aria-labelledby="ficha-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker" data-i18n="ficha.kicker">HackMeridian 2026 · Lisboa · trilha Scale</span>
+          <h2 id="ficha-title" class="section__title ficha__title">
+            <img class="ficha__mark" src="assets/ficha-mark.svg" alt="" width="56" height="56" />
+            <span>Ficha</span>
+          </h2>
+          <p class="section__sub" data-i18n="ficha.sub">
+            Recarga de celular paga por minuto na Stellar. Os minutos não usados voltam para você.
+          </p>
+        </div>
+
+        <div class="product">
+          <!-- card principal -->
+          <article class="product__main grad-border reveal">
+            <div class="grad-border__inner">
+              <span class="badge" data-i18n="ficha.badge">Stellar testnet · hardware real</span>
+              <h3 class="product__h" data-i18n="ficha.h">Pague o tempo que carrega. O que sobra volta.</h3>
+              <p class="product__p" data-i18n="ficha.p">
+                Pague por uma <strong>carteira não custodial</strong> e conecte o celular. Uma estação sem chave
+                liga o carregador e só conta o tempo pago enquanto confirma que o celular está carregando.
+                No fim, o recibo prova o tempo não usado e <strong>um toque devolve esse valor</strong> pelo
+                contrato FichaEscrow; o local recebe o resto.
+              </p>
+              <p class="product__p product__p--muted" data-i18n="ficha.pmuted">
+                Tudo roda na <strong>testnet</strong> da Stellar, com hardware real (relé e carregador USB)
+                e código aberto sob licença MIT.
+              </p>
+
+              <div class="product__links">
+                <a class="btn btn--primary" href="https://ficha-stellar.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="ficha.btn.app">Abrir o app</a>
+                <a class="btn btn--ghost" href="https://github.com/beto-rocha-blockchain/ficha-stellar" target="_blank" rel="noopener noreferrer" data-i18n="ficha.btn.code">Código-fonte (GitHub)</a>
+                <a class="btn btn--ghost" href="https://stellar.expert/explorer/testnet/contract/CBRNN2W726PIWP7DLLCAOW663I2TBSMR6N7J7S4CGGUIWIXK4HYI6KYC" target="_blank" rel="noopener noreferrer" data-i18n="ficha.btn.contract">Contrato no stellar.expert</a>
+                <!-- FICHA_DECK_LINK -->
+                <!-- FICHA_VIDEO_LINK -->
+              </div>
+            </div>
+          </article>
+
+          <!-- destaques da Ficha -->
+          <ul class="product__features product__features--stack">
+            <li class="feature reveal">
+              <span class="feature__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="8" cy="15" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M10.8 12.2 19 4m-3 3 2.5 2.5M4 4l16 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h4 data-i18n="ficha.f1.h">Estação sem chave</h4>
+                <p data-i18n="ficha.f1.p">Nunca guarda chave nem conta Stellar; só lê o ledger. Desligamentos de 3 segundos no relé confirmam que o celular carrega de verdade, e o tempo pago só conta enquanto isso acontece.</p>
+              </div>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 3.5v5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8v4l2.5 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h4>FichaEscrow · Soroban</h4>
+                <p data-i18n="ficha.f2.p">Sem admin, sem upgrade, sem saque. Quem paga deposita; o recibo da estação traz uma prova em cadeia de hashes do tempo não usado; um toque devolve esse valor e o local recebe o resto.</p>
+              </div>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 9v6M9 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h4 data-i18n="ficha.f3.h">Modo segurança pública</h4>
+                <p data-i18n="ficha.f3.p">Para lugares onde ficar sem bateria é perigoso: rodoviárias, estações de trem, aeroportos, lugares remotos e bairros de risco. 2 minutos de recarga + 2 de Wi-Fi grátis por celular por dia, números de emergência locais primeiro e pagamento sem dados móveis. Privado por padrão; não substitui os serviços de emergência.</p>
+              </div>
+            </li>
+            <li class="feature reveal">
+              <span class="feature__ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M9 3h6M10 3v6l-5.6 9.6A1.6 1.6 0 0 0 5.8 21h12.4a1.6 1.6 0 0 0 1.4-2.4L14 9V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 15h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h4 data-i18n="ficha.f4.h">Testado na testnet</h4>
+                <p data-i18n="ficha.f4.p">574 verificações da estação, 336 testes do app e 37 do contrato, com execuções gravadas na testnet e cada transação com link. Carteira não custodial (PWA + Android) em inglês e português.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== ENERGYPAY ===================== -->
     <section class="section" id="energypay" aria-labelledby="energypay-title">
       <div class="container">
@@ -775,6 +859,17 @@
           "float.x402": "pagamentos máquina-a-máquina", "float.zk": "privado &amp; verificável", "float.rust": "memória segura &amp; veloz", "float.wasm": "portátil &amp; determinística",
           "metric.deploy": "deploy de produção", "metric.stackv": "Web3 + Energia", "metric.recvk": "recebíveis", "metric.recvv": "auditáveis", "metric.recvd": "rastro on-chain", "metric.mktk": "mercado", "metric.mktd": "mercado livre de energia",
           "marquee.acl": "Mercado Livre de Energia",
+          "ficha.kicker": "HackMeridian 2026 · Lisboa · trilha Scale",
+          "ficha.sub": "Recarga de celular paga por minuto na Stellar. Os minutos não usados voltam para você.",
+          "ficha.badge": "Stellar testnet · hardware real",
+          "ficha.h": "Pague o tempo que carrega. O que sobra volta.",
+          "ficha.p": "Pague por uma <strong>carteira não custodial</strong> e conecte o celular. Uma estação sem chave liga o carregador e só conta o tempo pago enquanto confirma que o celular está carregando. No fim, o recibo prova o tempo não usado e <strong>um toque devolve esse valor</strong> pelo contrato FichaEscrow; o local recebe o resto.",
+          "ficha.pmuted": "Tudo roda na <strong>testnet</strong> da Stellar, com hardware real (relé e carregador USB) e código aberto sob licença MIT.",
+          "ficha.btn.app": "Abrir o app", "ficha.btn.code": "Código-fonte (GitHub)", "ficha.btn.contract": "Contrato no stellar.expert",
+          "ficha.f1.h": "Estação sem chave", "ficha.f1.p": "Nunca guarda chave nem conta Stellar; só lê o ledger. Desligamentos de 3 segundos no relé confirmam que o celular carrega de verdade, e o tempo pago só conta enquanto isso acontece.",
+          "ficha.f2.p": "Sem admin, sem upgrade, sem saque. Quem paga deposita; o recibo da estação traz uma prova em cadeia de hashes do tempo não usado; um toque devolve esse valor e o local recebe o resto.",
+          "ficha.f3.h": "Modo segurança pública", "ficha.f3.p": "Para lugares onde ficar sem bateria é perigoso: rodoviárias, estações de trem, aeroportos, lugares remotos e bairros de risco. 2 minutos de recarga + 2 de Wi-Fi grátis por celular por dia, números de emergência locais primeiro e pagamento sem dados móveis. Privado por padrão; não substitui os serviços de emergência.",
+          "ficha.f4.h": "Testado na testnet", "ficha.f4.p": "574 verificações da estação, 336 testes do app e 37 do contrato, com execuções gravadas na testnet e cada transação com link. Carteira não custodial (PWA + Android) em inglês e português.",
           "ep.kicker": "O produto",
           "ep.sub": "Pré-camada de liquidação para o setor elétrico: registro, controle e auditoria de recebíveis. Programável, auditável e pronta para a expansão do mercado livre — que a Lei 15.269/2025 leva de ~85 mil para mais de 20 milhões de unidades consumidoras.",
           "ep.badge": "Marco recente · em mainnet com usuários e transações reais",
@@ -841,6 +936,17 @@
           "float.x402": "machine-to-machine payments", "float.zk": "private &amp; verifiable", "float.rust": "memory-safe &amp; fast", "float.wasm": "portable &amp; deterministic",
           "metric.deploy": "production deploy", "metric.stackv": "Web3 + Energy", "metric.recvk": "receivables", "metric.recvv": "auditable", "metric.recvd": "on-chain trail", "metric.mktk": "market", "metric.mktd": "free energy market",
           "marquee.acl": "Free Energy Market",
+          "ficha.kicker": "HackMeridian 2026 · Lisbon · Scale path",
+          "ficha.sub": "Pay-per-minute phone charging on Stellar. Unused minutes come back.",
+          "ficha.badge": "Stellar testnet · real hardware",
+          "ficha.h": "Pay for the time you charge. What's left comes back.",
+          "ficha.p": "Pay from a <strong>non-custodial wallet</strong> and plug in your phone. A keyless station switches the charger on and counts paid time only while it verifies that the phone is charging. At the end, the receipt proves the unused time and <strong>one tap refunds it</strong> from the FichaEscrow contract; the venue gets the rest.",
+          "ficha.pmuted": "Everything runs on the Stellar <strong>testnet</strong>, on real hardware (a relay and a USB charger), open source under the MIT licence.",
+          "ficha.btn.app": "Open the live app", "ficha.btn.code": "Source code (GitHub)", "ficha.btn.contract": "Contract on stellar.expert",
+          "ficha.f1.h": "Keyless station", "ficha.f1.p": "It never holds a Stellar key or account; it only reads the ledger. 3-second relay-off probes verify that the phone really charges from it, and paid time counts only while it does.",
+          "ficha.f2.p": "No admin, no upgrade, no withdraw. The payer deposits; the station's receipt carries a hash-chain proof of the unused time; one tap refunds it and the venue gets the rest.",
+          "ficha.f3.h": "Public safety mode", "ficha.f3.p": "For places where a dead phone is dangerous: bus and train stations, airports, remote places and high-risk neighbourhoods. 2 minutes of charging + 2 of Wi-Fi free per phone per day, local emergency numbers first, and payment with no mobile data. Private by design; it does not replace emergency services.",
+          "ficha.f4.h": "Tested on testnet", "ficha.f4.p": "574 station checks, 336 app tests and 37 contract tests, with recorded testnet runs and every transaction linked. Non-custodial wallet (PWA + Android) in English and Portuguese.",
           "ep.kicker": "The product",
           "ep.sub": "Settlement pre-layer for the power sector: registration, control and audit of receivables. Programmable, auditable and ready for the free-market expansion — which Brazil's Law 15.269/2025 grows from ~85 thousand to more than 20 million consumer units.",
           "ep.badge": "Recent milestone · on mainnet with real users and transactions",
@@ -907,6 +1013,17 @@
           "float.x402": "pagos máquina a máquina", "float.zk": "privado y verificable", "float.rust": "memoria segura y rápida", "float.wasm": "portable y determinista",
           "metric.deploy": "despliegue de producción", "metric.stackv": "Web3 + Energía", "metric.recvk": "por cobrar", "metric.recvv": "auditables", "metric.recvd": "traza on-chain", "metric.mktk": "mercado", "metric.mktd": "mercado libre de energía",
           "marquee.acl": "Mercado Libre de Energía",
+          "ficha.kicker": "HackMeridian 2026 · Lisboa · ruta Scale",
+          "ficha.sub": "Carga de celular pagada por minuto en Stellar. Los minutos no usados vuelven a ti.",
+          "ficha.badge": "Stellar testnet · hardware real",
+          "ficha.h": "Paga el tiempo que cargas. Lo que sobra vuelve.",
+          "ficha.p": "Paga desde una <strong>billetera no custodial</strong> y conecta el celular. Una estación sin llave enciende el cargador y solo cuenta el tiempo pagado mientras verifica que el celular está cargando. Al final, el recibo prueba el tiempo no usado y <strong>un toque lo reembolsa</strong> desde el contrato FichaEscrow; el local recibe el resto.",
+          "ficha.pmuted": "Todo corre en la <strong>testnet</strong> de Stellar, con hardware real (un relé y un cargador USB) y código abierto bajo licencia MIT.",
+          "ficha.btn.app": "Abrir la app", "ficha.btn.code": "Código fuente (GitHub)", "ficha.btn.contract": "Contrato en stellar.expert",
+          "ficha.f1.h": "Estación sin llave", "ficha.f1.p": "Nunca guarda una llave ni una cuenta Stellar; solo lee el ledger. Apagados de 3 segundos del relé verifican que el celular realmente carga desde ella, y el tiempo pagado solo cuenta mientras tanto.",
+          "ficha.f2.p": "Sin admin, sin upgrade, sin retiro. Quien paga deposita; el recibo de la estación trae una prueba en cadena de hashes del tiempo no usado; un toque lo reembolsa y el local recibe el resto.",
+          "ficha.f3.h": "Modo seguridad pública", "ficha.f3.p": "Para lugares donde quedarse sin batería es peligroso: terminales de autobús y tren, aeropuertos, lugares remotos y barrios de riesgo. 2 minutos de carga + 2 de Wi-Fi gratis por celular por día, números de emergencia locales primero y pago sin datos móviles. Privado por diseño; no reemplaza a los servicios de emergencia.",
+          "ficha.f4.h": "Probado en testnet", "ficha.f4.p": "574 verificaciones de la estación, 336 pruebas de la app y 37 del contrato, con ejecuciones grabadas en testnet y cada transacción enlazada. Billetera no custodial (PWA + Android) en inglés y portugués.",
           "ep.kicker": "El producto",
           "ep.sub": "Precapa de liquidación para el sector eléctrico: registro, control y auditoría de cuentas por cobrar. Programable, auditable y lista para la expansión del mercado libre — que la Ley 15.269/2025 de Brasil lleva de ~85 mil a más de 20 millones de unidades consumidoras.",
           "ep.badge": "Hito reciente · en mainnet con usuarios y transacciones reales",

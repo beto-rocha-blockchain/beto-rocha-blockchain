@@ -486,6 +486,14 @@ blockquote { margin: 0; }
 .feature p { font-size: .88rem; color: var(--muted); }
 
 /* =========================================================
+   FICHA (reuses the product layout above)
+   ========================================================= */
+.ficha__title { display: flex; align-items: center; gap: .9rem; }
+.ficha__mark { flex: 0 0 auto; width: 56px; height: 56px; }
+/* longer feature texts read better one per row beside the main card */
+@media (min-width: 961px) { .product__features--stack { grid-template-columns: 1fr; } }
+
+/* =========================================================
    SOBRE / TIMELINE
    ========================================================= */
 .about__intro { max-width: 62ch; margin-bottom: 3rem; }
