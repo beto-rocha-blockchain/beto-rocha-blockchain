@@ -25,6 +25,9 @@
   <img src="https://img.shields.io/badge/Petr%C3%B3polis%2C%20RJ%20%F0%9F%87%A7%F0%9F%87%B7-Brazil-39D353?style=for-the-badge&labelColor=0D1117" alt="Petropolis, RJ - Brazil" />
 </p>
 
+<!-- ===================== NOW ===================== -->
+<p align="center"><b>At HackMeridian 2026 (Lisbon, 25-26 Oct): <a href="https://github.com/beto-rocha-blockchain/ficha-stellar">Ficha</a></b> - pay-per-minute phone charging on Stellar; unused minutes come back.</p>
+
 </div>
 
 <!-- ===================== ABOUT ===================== -->
@@ -128,6 +131,12 @@ Em paralelo ao protocolo, construo o **nucleo de liquidacao e clearing do Energy
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://github.com/beto-rocha-blockchain/ficha-stellar"><b>ficha-stellar</b></a></td>
+      <td>Ficha - pay-per-minute phone charging on Stellar; unused minutes come back. A keyless station, the FichaEscrow Soroban escrow (no admin, hash-chain refunds) and a public safety mode, on testnet. <a href="https://ficha-stellar.vercel.app">Live app</a>.</td>
+      <td align="center"><a href="https://github.com/beto-rocha-blockchain/ficha-stellar/stargazers"><img src="https://img.shields.io/github/stars/beto-rocha-blockchain/ficha-stellar?style=flat&labelColor=0D1117&color=39D353" alt="Stars" /></a></td>
+      <td align="center"><img src="https://img.shields.io/github/languages/top/beto-rocha-blockchain/ficha-stellar?style=flat&labelColor=0D1117&color=22D3EE" alt="Top language" /></td>
+    </tr>
     <tr>
       <td><a href="https://github.com/beto-rocha-blockchain/energypay-protocol"><b>energypay-protocol</b></a></td>
       <td>Programmable settlement infrastructure for energy markets - Stellar, Soroban, stablecoins, x402 & WASM.</td>
