@@ -1156,6 +1156,15 @@
   <!-- scroll-reveal (progressivo; sem JS o conteúdo aparece normalmente) -->
   <script>
     (function () {
+      // sombra na nav ao rolar (também com movimento reduzido)
+      var nav = document.querySelector('.nav');
+      var onScroll = function () {
+        if (window.scrollY > 8) { nav.classList.add('is-scrolled'); }
+        else { nav.classList.remove('is-scrolled'); }
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
       var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       var els = document.querySelectorAll('.reveal');
       if (prefersReduced || !('IntersectionObserver' in window)) {
@@ -1171,15 +1180,6 @@
         });
       }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
       els.forEach(function (el) { io.observe(el); });
-
-      // sombra na nav ao rolar
-      var nav = document.querySelector('.nav');
-      var onScroll = function () {
-        if (window.scrollY > 8) { nav.classList.add('is-scrolled'); }
-        else { nav.classList.remove('is-scrolled'); }
-      };
-      onScroll();
-      window.addEventListener('scroll', onScroll, { passive: true });
     })();
   </script>
 </body>
