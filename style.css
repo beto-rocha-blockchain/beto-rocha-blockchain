@@ -490,6 +490,8 @@ blockquote { margin: 0; }
    ========================================================= */
 .ficha__title { display: flex; align-items: center; gap: .9rem; }
 .ficha__mark { flex: 0 0 auto; width: 56px; height: 56px; }
+/* let the grid columns shrink to the viewport instead of their longest button */
+#ficha .product > * { min-width: 0; }
 /* longer feature texts read better one per row beside the main card */
 @media (min-width: 961px) { .product__features--stack { grid-template-columns: 1fr; } }
 
