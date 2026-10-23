@@ -26,7 +26,7 @@
 </p>
 
 <!-- ===================== NOW ===================== -->
-<p align="center"><b>At HackMeridian 2026 (Lisbon, 25-26 Oct): <a href="https://github.com/beto-rocha-blockchain/ficha-stellar">Ficha</a></b> - pay-per-minute phone charging on Stellar; unused minutes come back.</p>
+<p align="center"><b>At HackMeridian 2026 (Lisbon, 25-26 Oct): <a href="https://github.com/beto-rocha-blockchain/ficha-stellar">Ficha</a></b> - pay-per-minute phone charging on Stellar; unused minutes come back. <a href="https://youtu.be/cj7e7CjBzUM">Demo video (3 min)</a></p>
 
 </div>
 
