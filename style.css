@@ -490,6 +490,8 @@ blockquote { margin: 0; }
    ========================================================= */
 /* let the grid columns shrink to the viewport instead of their longest button */
 #ficha .product > * { min-width: 0; }
+/* keep "Wi-Fi" from breaking at its hyphen */
+#ficha .nowrap { white-space: nowrap; }
 /* longer feature texts read better one per row beside the main card;
    the main card then matches the column height, its links at the bottom */
 @media (min-width: 961px) {
