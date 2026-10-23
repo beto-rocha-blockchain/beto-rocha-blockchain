@@ -490,8 +490,16 @@ blockquote { margin: 0; }
    ========================================================= */
 /* let the grid columns shrink to the viewport instead of their longest button */
 #ficha .product > * { min-width: 0; }
-/* longer feature texts read better one per row beside the main card */
-@media (min-width: 961px) { .product__features--stack { grid-template-columns: 1fr; } }
+/* longer feature texts read better one per row beside the main card;
+   the main card then matches the column height, its links at the bottom */
+@media (min-width: 961px) {
+  .product__features--stack { grid-template-columns: 1fr; }
+  #ficha .product { align-items: stretch; }
+  #ficha .product__main .grad-border__inner { display: flex; flex-direction: column; }
+  #ficha .product__main .badge { align-self: flex-start; }
+  #ficha .product__p--muted { margin-bottom: 1.4rem; }
+  #ficha .product__links { margin-top: auto; }
+}
 
 /* =========================================================
    SOBRE / TIMELINE
