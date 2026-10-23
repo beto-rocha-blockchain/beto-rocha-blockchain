@@ -703,6 +703,9 @@ blockquote { margin: 0; }
    RESPONSIVE
    ========================================================= */
 @media (max-width: 960px) {
+  /* keep six nav links + language switch inside tablet widths */
+  .nav__links { gap: .9rem; }
+  .status-pill { display: none; }
   .hero__inner { grid-template-columns: 1fr; }
   .hero__visual { order: -1; margin-bottom: 1rem; }
   .hero__lead { max-width: 50ch; }
